@@ -4,6 +4,11 @@ Created on Oct 27, 2019
 @author: snake91
 '''
 
+
+'''
+    checking distribution of max_n Fn(x) - F(x)
+
+'''
 import numpy as np
 import matplotlib.pyplot as plt
 

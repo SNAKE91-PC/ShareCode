@@ -13,7 +13,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-
 n_size   = 100
 n_series = 1000000
 x = [np.random.uniform(size = n_size) for i in range(n_series)]

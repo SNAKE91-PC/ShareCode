@@ -20,7 +20,7 @@ x = msiidN(t = 1000, transmat = transmat, startstate = 1, paramsmean = [-6, 5], 
 
 
 bounds = [(None, None), (1e-8, None), (None, None), (1e-8, None)] + [(0,1), (0,1)] #,(0,1),(0,1)]
-
+bounds_de = [(-10, 10), (1e-8, 50), (10, 10), (1e-8, 50)] + [(0,1), (0,1)]
 
 def probcons(x):
     
@@ -44,7 +44,7 @@ cons = {'type': 'eq', 'fun': lambda y: probcons(y[4:])}
 
 prob0 = 0.5
 params = spo.minimize(fun = maxMSIID, x0 = (0, 1, 0, 1, 0.5, 0.5), args = (x, prob0), bounds = bounds, constraints = cons, method = 'trust-constr')
-
-print(params)
+# params = spo.differential_evolution(func = maxMSIID, args = (x, prob0), bounds = bounds_de)
+# params = spo.brute(func = maxMSIID, ranges = bounds_de, args = (x, prob0)) 
 
 print("")

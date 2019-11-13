@@ -37,6 +37,8 @@ def maxMSIID(params, x, prob0 = 0.5):
 #     dim = np.int(np.sqrt(len(params[4:])))
     transmat = np.asmatrix(params[4:])
 #     transmat = np.reshape(transmat, newshape = (dim, dim))
+    if  np.sum(transmat) != 1:
+        return np.inf   
     
     print(mu0, sigma0, mu1, sigma1, np.sum(transmat), sep = ' ')
     

@@ -38,6 +38,7 @@ def msiidN(t, transmat, startstate, paramsmean, paramsvar):
     return sample
 
 
+
 # def msarmaN(t, pmatrix, startstate, paramsp = None, paramsq = None):
 #  
 #     sample_tr =  sim_markovchain(t, pmatrix = pmatrix, startvalue = startstate)

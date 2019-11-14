@@ -13,9 +13,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-n_size   = 100
-n_series = 1000000
-x = [np.random.uniform(size = n_size) for i in range(n_series)]
+n_size   = 10
+n_series = 100000
+x = np.random.uniform(size = (n_series * n_size)) #for i in range(n_series)]
 
 def onesample_theor_ks(x):
  
@@ -69,20 +69,23 @@ def nsample_theor_ks(x):
 # plt.hist(sample_theor_statsks4, bins = 300, histtype='step', label = 'four sample emp')
 
 maxid = 10
-statsList = []
-for i in range(1, maxid):
+i = 5
+# for i in range(1, maxid):
+def genStats(length, universe, maxid = 10, nsim = 1000):
+    universe = np.random.choice(universe, nsim)
+    sample = [np.random.choice(universe, size = (n_size)) for length in range(n_series)]
+    sample_theor_statsks = [nsample_theor_ks(sample[j-length: j]) for j in range(length, len(sample) - (maxid - length))] 
+    return sample_theor_statsks
 
-    sample_theor_statsks = [nsample_theor_ks(x[j-i: j]) for j in range(i, len(x) - (maxid - i))]
-    statsList.append(sample_theor_statsks)
-    
 
-for i in range(len(statsList)):
-    
-    plt.hist(statsList[i], bins = 400, histtype='step', label = 'sample theor ' + str(i))
-    
-plt.legend()
+statsList = genStats(5, x, maxid = 10)
 
-plt.show()
+# for i in range(len(statsList)):
+#     
+#     plt.hist(statsList[i], bins = 400, histtype='step', label = 'sample theor ' + str(i))
+#     
+# plt.legend()
+# plt.show()
 
 
 

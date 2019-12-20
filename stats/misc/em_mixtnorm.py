@@ -34,12 +34,16 @@ def em_algorithm(X, states, pdf, maxiter = 2500):
         for j in range(k):
             # use the current values for the parameters to evaluate the posterior
             # probabilities of the data to have been generanted by each gaussian    
-            b.append((likelihood[j] * weights[j]) / (np.sum([likelihood[i] * weights[i] for i in range(k)], axis=0)+eps))
+            
+            # bayes theorem
+            # posterior = likelihood x prior / evidence
+            b.append((likelihood[j] * weights[j]) / (np.sum([likelihood[i] * weights[i] for i in range(k)], axis=0)))
           
             # updage mean and variance
-            means[j] = np.sum(b[j] * X) / (np.sum(b[j]+eps))
-            variances[j] = np.sum(b[j] * np.square(X - means[j])) / (np.sum(b[j]+eps))
-            
+            means[j] = np.sum((b[j] / np.sum(b[j])) * X)
+#             means[j] = np.sum(b[j] * X) / (np.sum(b[j]))
+            variances[j] = np.sum((b[j] / np.sum(b[j])) * np.square(X - means[j]))
+#             variances[j] = np.sum(b[j] * np.square(X - means[j])) / (np.sum(b[j]))
             # update the weights
             weights[j] = np.mean(b[j])
                 

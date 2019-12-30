@@ -7,11 +7,12 @@ Created on Oct 11, 2019
 
 import numpy as np
 import scipy.stats as st
+import scipy.optimize as opt
 import matplotlib.pyplot as plt
 
 
   
-def em_algorithm(X, states, pdf, maxiter = 2500):
+def em_algorithm(X, states, pdf, maxiter = 25):
     
     
     k = states  
@@ -70,13 +71,11 @@ def pdf(data, mean: float, variance: float):
     return s1 * s2
   
 # print(means, variances)
-  
-k = 3
 
-weights, means, variances = em_algorithm(X = X, states = k, pdf = pdf, maxiter = 2500)
+
+weights, means, variances = em_algorithm(X = X, states = 3, pdf = pdf, maxiter = 25)
     
 plt.hist(X, bins = 2000)
-print("")
 
 
 

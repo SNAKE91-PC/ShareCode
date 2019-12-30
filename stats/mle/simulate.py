@@ -925,10 +925,12 @@ def ar1Gaussian(t, phi = 0.1):
     return np.array(yList)#, np.array(VaR), np.array(unVaR)
 
 
-def arpStudent(t, phi = [0.1],  df = 10):
+def arpStudent(t, phi = [0.1],  df = 10, y0 = None):
     
-    y0 = [0. for i in range(len(phi))]
     
+    if y0 is None:
+        y0 = list(np.zeros(len(phi)))
+        
     yList = y0
     
 #     assert(len(phi) == len(y0))

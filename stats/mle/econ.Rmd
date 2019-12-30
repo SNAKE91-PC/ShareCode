@@ -1,0 +1,112 @@
+---
+title: "Study on convergence properties of econometric processes"
+author: "Vittorio Apicella"
+date: "20/12/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, engine.path = '/usr/bin/python3.7', warning = FALSE, cache.lazy = FALSE)
+library("reticulate")
+use_python("/usr/bin/python3.7", required = TRUE)
+
+sys = import("sys")
+os = import("os")
+```
+
+```{python settings, echo = FALSE}
+import os
+import sys
+
+sys.path.append(os.getcwd().split("/mle")[0])
+
+```
+
+## Convergence of AR coefficients
+
+For replicability purposed, unless stated otherwise the simulations have been
+carried out with a fixed seed $s = 10$.
+
+Below we compare a Gaussian and Student t process.
+
+
+```{python simARStudent, echo=FALSE}
+import PyQt5
+from simulate import arpStudent, arpGaussian
+import matplotlib.pyplot as plt
+import numpy as np
+
+phi = [0.2, 0.5]
+
+np.random.seed(10)
+yStudent = arpStudent(t = 500, phi = phi, df = 4)#, y0 = None)
+
+np.random.seed(10)
+yGaussian = arpGaussian(t = 500, phi = phi, y0 = None)
+
+plt.plot(yStudent, label = 'Student 4 df')
+plt.plot(yGaussian, label = 'Gaussian')
+plt.legend()
+plt.show()
+```
+
+
+```{r ggplot, echo = FALSE}
+ 
+ # library(ggplot2)
+ # 
+ # t = seq(1, length(py$yStudent))
+ # df = data.frame(t, py$yStudent, py$yGaussian)
+ # 
+ # ggplot(data=df, aes(x=t)) +
+ #   geom_line(aes(y = py$yStudent), color = 'darkred')+
+ #   geom_point(aes(y = py$yStudent))+
+ # 
+ #   geom_line(aes(y = py$yGaussian), color = 'steelblue')+
+ #   geom_point(aes(y = py$yGaussian))
+ 
+```
+
+The two processes are AR(2) with $\phi_1 = 0.2$ and $\phi_2 = 0.5$
+As it can be clearly seen from the picture above, deviations in the Student process are much wider than the Gaussian.
+Let's compute the estimates via MLE
+
+
+```{python estARStudent, echo=FALSE}
+import likelihood as logL
+import constraint as cons
+import scipy.optimize as opt
+
+x0 = tuple([0. for i in range(len(phi))])
+bounds = [(-0.99, 0.99) for i in range(len(phi))]
+
+paramsStudent = opt.minimize(logL.maxARpT, x0 = x0, \
+                        args = yStudent, \
+                        bounds = bounds,
+                        constraints= ({'type': 'ineq', 'fun': lambda y: cons.consARp(y)})#, \
+                        
+                      )
+
+paramsGaussian = opt.minimize(logL.maxARpN, x0 = x0, \
+                        args = yGaussian, \
+                        bounds = bounds,
+                        constraints= ({'type': 'ineq', 'fun': lambda y: cons.consARp(y)})#, \
+                        
+                      )
+                      
+```
+
+Below the estimated parameters for both the processes
+```{python paramsStudent, echo = FALSE}
+print(paramsStudent)
+```
+
+```{python paramsGaussian, echo = FALSE}
+print(paramsGaussian)
+```
+\\
+
+Finally, we run some convergence tests, below the plot with deviation from the true parameter
+
+
+

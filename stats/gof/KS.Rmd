@@ -1,0 +1,38 @@
+---
+title: "Kolmogorov-Smirnov"
+author: "Vittorio Apicella"
+date: "27/12/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, engine.path = '/usr/bin/python3.7', warning = FALSE, cache.lazy = FALSE)
+library("reticulate")
+use_python("/usr/bin/python3.7", required = TRUE)
+
+sys = import("sys")
+os = import("os")
+```
+
+```{python settings, echo = FALSE}
+import os
+import sys
+
+sys.path.append(os.getcwd().split("/gof")[0])
+
+```
+
+## Kolmogorov-Smirnov
+
+Kolmogorov-Smirnov test evaluates whether $F_n$ (the <em>empirical</em> ) is equal to $F^{*}$. The statistics is defined as
+
+$KS = \displaystyle\int_{R} F_n(x) - F^{*}(x)$
+
+
+
+```{python chunk1}
+
+
+
+
+```

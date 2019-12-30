@@ -713,7 +713,7 @@ def maxARpN(params, x, estimation = 'MAXML', sigma = None):
     phi = params#[0:-1]
 #     sigma = params[-1]
     
-    if 'sigma' is None:
+    if sigma is None:
         sigma = np.sqrt(np.var(x)) #
     else:
         sigma = sigma

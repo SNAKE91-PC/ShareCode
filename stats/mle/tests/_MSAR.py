@@ -78,70 +78,6 @@ def mrs_est(theta, x, y, option = 'MLE'):
 
 
 
-
-def prova_mrs_est(theta, x, y, option = 'MLE'):
-     
-    alpha1, alpha2, beta1, beta2, sigma1, sigma2, p11, p22 = theta
-#     p11 = 1/(1+np.exp(-p11))
-#     p22 = 1/(1+np.exp(-p22))
-
-    #in order to make inference about what state we are in in period t we need the conditional
-    # densities given the information set through t-1
-    
-    f1 = N(y, alpha1 + beta1 * x, sigma1)
-    f2 = N(y, alpha2 + beta2 * x, sigma2)
-
-    f = np.asarray([f1,f2]).T
-    
-        #S.forecast is the state value looking forward conditional on info up to time t
-    #S.inf is the updated state value
-      
-    S_forecast = np.zeros(shape = (len(y), 2))
-    S_inf = deepcopy(S_forecast)
-    ov = np.ones(2)
-    
-    P = np.asarray([[p11, 1-p11], [1-p22, p22]])
-    model_lik = np.zeros(len(y))
-    
-    S_inf[0, ] = (np.diag(P) * f[0,]) / np.dot(ov, np.diag(P) * f[0,].T)
-    
-    for iter in range(10000):
-
-        for i in range(1, len(y)):
-    
-            #in time t we first make our forecast of the state in t based on the
-            # data up to time t-1, then we update that forecast based on the data
-            # available in t
-            
-            # expectation
-            #
-            S_forecast[i,:] = np.dot(P, S_inf[i-1: i, :].T).T
-            
-            # maximization
-            # bayes theorem
-            # posterior = likelihood x prior / evidence
-            S_inf[i, : ] = (S_forecast[i,: ] * f[i,:]) / np.dot(S_forecast[i, :], f[i, :].T)
-                
-            model_lik[i] = max(1e-24, np.dot(ov, S_forecast[i] * f[i]))
-     
-    if option == 'MLE':
-        logl = np.sum(np.log(model_lik[1:]))
-         
-        print(theta, -logl, sep = '')
-        
-        return -logl
-    elif option == 'SE':
-        
-        return (S_inf, S_forecast)
-
-
-
-
-
-
-
-
-
 def ham_smooth(theta, x, y):
     
     alpha1, alpha2, beta1, beta2, sigma1, sigma2, p11, p22 = theta
@@ -206,7 +142,7 @@ mrs_est(theta_new, x, y) #18941.68118
 theta = []
 bounds = []
 
-cons = {'type': 'eq',  'fun' :lambda x: cons(x)}
+# cons = {'type': 'eq',  'fun' :lambda x: cons(x)}
 
 theta = [0, 0, 0, 0, 1, 1, 0., 1.]
 bounds_de = [(-10,10), (-10,10), (-5, 5), (-5, 5), (1e-8, 2), (1e-8, 2), (0,1), (0,1)]  

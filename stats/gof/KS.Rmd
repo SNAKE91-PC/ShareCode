@@ -36,3 +36,5 @@ $KS = \displaystyle\int_{R} F_n(x) - F^{*}(x)$
 
 
 ```
+
+draw <- riwish(3, matrix(c(1,.3,.3,1),2,2))

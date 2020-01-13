@@ -17,36 +17,49 @@ from copy import deepcopy
 N = lambda x, mu, sigma : (1./np.sqrt(2*np.pi*sigma**2)) * np.exp(-(x-mu)**2 / (2*sigma**2))
 
 
-def mrs_est(theta, x, y, option = 'MLE'):
+flatten = lambda l: [item for sublist in l for item in sublist]
+
+
+
+def mrs_est(theta, x, y, df, option = 'MLE'):
      
-    alpha1, alpha2, alpha3, beta1, beta2, beta3, sigma1, sigma2, sigma3, p11, p13, p22, p23, p32, p33 = theta
+    alpha = theta[0:df]
+    beta = theta[df:2 * df]
+    sigma = theta[2 * df : 3 * df]
     
-    if p11 + p13 >= 1:
-        return np.inf
-    if p22 + p23 >= 1:
-        return np.inf
-    if p32 + p33 >= 1:
+    probmat = theta[3*df:]
+    probmat = np.asmatrix(probmat).reshape((df, df-1))
+    probmat = np.asmatrix(np.hstack([probmat, 1 - probmat.sum(axis = 1)]))
+
+    if np.min(1-probmat.sum(axis = 1)) > 0: #>0
         return np.inf
 #     p11 = 1/(1+np.exp(-p11))
 #     p22 = 1/(1+np.exp(-p22))
 
     #in order to make inference about what state we are in in period t we need the conditional
     # densities given the information set through t-1
-    
-    f1 = N(y, alpha1 + beta1 * x, sigma1)
-    f2 = N(y, alpha2 + beta2 * x, sigma2)
-    f3 = N(y, alpha3 + beta3 * x, sigma3)
 
-    f = np.asarray([f1,f2,f3]).T
+    f = []
+    for i in range(len(alpha)):
+            
+        f.append( N(y, alpha[i] + beta[i] * x, sigma[i]) )
+#         f1 = N(y, alpha1 + beta1 * x, sigma1)
+#         f2 = N(y, alpha2 + beta2 * x, sigma2)
+#         f3 = N(y, alpha3 + beta3 * x, sigma3)
+
+#     f = np.asarray([f1,f2,f3]).T
+    f = np.asarray(f).T
     
-        #S.forecast is the state value looking forward conditional on info up to time t
+    #S.forecast is the state value looking forward conditional on info up to time t
     #S.inf is the updated state value
       
-    S_forecast = np.zeros(shape = (len(y), 3))
+    S_forecast = np.zeros(shape = (len(y), df))
     S_inf = deepcopy(S_forecast)
-    ov = np.ones(3)
+    ov = np.ones(df)
     
-    P = np.asarray([ [p11, 1-p11-p13, p13], [1-p22-p23, p22, p23], [1-p33-p32, p32, p33] ])
+#     P = np.asarray([ [p11, 1-p11-p13, p13], [1-p22-p23, p22, p23], [1-p33-p32, p32, p33] ])
+    P = probmat
+
     model_lik = np.zeros(len(y))
     
     S_inf[0, ] = (np.diag(P) * f[0,]) / np.dot(ov, np.diag(P) * f[0,].T)
@@ -74,40 +87,7 @@ def mrs_est(theta, x, y, option = 'MLE'):
         return (S_inf, S_forecast)
 
 
-def ham_smooth(theta, x, y):
-    
-    alpha1, alpha2, beta1, beta2, sigma1, sigma2, p11, p22 = theta
-    S_inf, S_forecast = mrs_est(theta, x, y, option = 'SE')
-    
-    T = len(y)
-    P_smooth = np.zeros(2 * len(y)).reshape((len(y), 2)) 
-    P_smooth[T-1: ] = deepcopy(S_inf[T-1: ])
-     
-    for i in reversed(range(1, T-1)):
-         
-        #1. probability that we observe S(t)=1, S(t+1)=1
-        #2. probability that we observe S(t)=1, S(t+1)=2
-        #3. probability that we observe S(t)=2, S(t+1)=1
-        #4. probability that we observe S(t)=2, S(t+1)=2
-         
-        #for #1 P[S(t)=1,S(t+1)=1|I(t+1)] = {P[S(t+1)=1|I(t+1)]*P[S(t)=1|I(t)]*P[S(t+1)=1|S(t)=1]}/P[S(t+1)=1|I(t)]
-        p1 = (S_inf[i, 0] * S_inf[i-1, 0] * p11)/ S_forecast[i,0]
-  
-        #for #2 we have
-        p2 = (S_inf[i, 1] * S_inf[i-1, 0] * (1-p11)) / S_forecast[i, 1]
-         
-        #for #3 we have
-        p3 = (S_inf[i, 0] * S_inf[i-1, 1]) * (1-p22) / S_forecast[i, 0]
-         
-        #for #4 we have
-        p4 = (S_inf[i, 1] * S_inf[i-1, 1] * p22) / S_forecast[i, 1]
-         
-        P_smooth[i, 0] = p1 + p2
-        P_smooth[i, 1] = p3 + p4
-         
-     
-    return P_smooth
-    
+
     
 
 #### SIMULATE PROCESSES
@@ -115,9 +95,7 @@ np.random.seed(10)
 
 transmat = {0: [0.5, 0.3, 0.2], 1: [0.5, 0.2, 0.3], 2: [0.5, 0.1, 0.4]} #np.matrix([[0.9, 0.1], [0.2, 0.8]])
 
-# theta = [-5, 5, 10, 1, 7, 4, 1, 1, 1, 0.5, 0.3, ]
-# alpha1, alpha2, alpha3, beta1, beta2, beta3, sigma1, sigma2, sigma3, p11, p13, p22, p23, p32, p33 = theta
-x = np.linspace(0, 100, 1000)
+x = np.linspace(0, 100, 10000)
 
 
 transitions = sim_markovchain(t = len(x), pmatrix = transmat, startvalue = 0)
@@ -126,41 +104,52 @@ est_prob = est_markovchain(transitions)
 beta = [1, 4, 7]
 intercept = [-5, 10, 5 ]
 
-y1 = [intercept[transitions[i]] + beta[transitions[i]] * x[i] + np.random.normal() for i in range(len(transitions))]#states[0][i] + np.random.normal() for i in range(len(transitions))]
-
-y = y1 #np.hstack([y1, y2])
+y = [intercept[transitions[i]] + beta[transitions[i]] * x[i] + np.random.normal() for i in range(len(transitions))]#states[0][i] + np.random.normal() for i in range(len(transitions))]
 
 
-
-
-# theta_new = [-5, 10, 5, 1, 4, 7, 1, 1, 1, 0.5, 0.5, 0.5]
-# mrs_est(theta_new, x, y) #18941.68118
-
-theta = []
-bounds = []
-
-cons = {'type': 'eq',  'fun' :lambda x: cons(x)}
-# theta = [0, 0, 0, 0, 1, 1, 0.5, 0.5]  
-
-def cons(x):
+def consfunc(x, df):
     
-    return 1-np.sum(x)
+    alpha = x[0:df] # @unusedvariable
+    beta = x[df:2 * df] # @unusedvariable
+    sigma = x[2 * df : 3 * df] # @unusedvariable
+    
+    probmat = x[3*df:]
+    probmat = np.asmatrix(probmat).reshape((df, df-1))
+    
+    return np.min(1-probmat.sum(axis = 1)) #>0
 
-theta = [0, 0, 0, 0, 0, 0, 1, 1, 1, 1e-8, 1-2e-8, 1e-8, 1-2e-8, 1e-8, 1-2e-8 ]
-bounds_de = [(-15,15), (-15,15), (-15, 15), (-10, 10), (-10, 10), (-10, 10), (1e-8, 2), (1e-8, 2), (1e-8, 2), (0,1), (0,1), (0,1),(0,1), (0,1),(0,1)]  
+
+df = len(beta) #n of states
+probmat = np.matrix(np.ones(df**2)/df).reshape((df,df))
 
 
-bounds_min = [(None,None), (None,None), (None, None), (None, None), (None, None), (None, None), (1e-8, None), (1e-8, None), (1e-8, None), (0,1), (0,1), (0,1),(0,1), (0,1),(0,1)]
+theta = [[0.] * df + [0.] * df + [1.] * df + flatten(probmat[:-1].tolist())  ] #0, 0, 0, 0, 0, 0, 1, 1, 1, 1e-8, 1-2e-8, 1e-8, 1-2e-8, 1e-8, 1-2e-8 ]
+theta = flatten(theta)
 
+# alpha, beta, sigma, probs
+bounds_de = [(-10,15)] * df + [(0, 10)] * df + [(1e-8, 2)] * df + [(0,1)] * df * (df - 1)  
+bounds_min =  [(None,None)] * df + [(None, None)] * df + [(1e-8, None)] * df + [(0,1)] * df * (df - 1)
 
-res1 = spo.minimize(mrs_est, x0 = theta, args = (x,y), bounds = bounds_min, tol = 10e-16)
-print(res1)
+cons = {'type': 'eq',  'fun' :lambda x: consfunc(x, df)}
 
-res2 = spo.differential_evolution(func = mrs_est, bounds = bounds_de, args = (x,y), atol = 10e-16)
+# res1 = spo.minimize(mrs_est, x0 = theta, args = (x,y, df), bounds = bounds_min, constraints = cons, tol = 10e-16, method = 'trust-constr')
+# print(res1)
+
+res2 = spo.differential_evolution(func = mrs_est, bounds = bounds_de, args = (x,y,df), atol = 10e-16)
+
+alpha = res2.x[0:df] # @unusedvariable
+beta = res2.x[df:2 * df] # @unusedvariable
+sigma = res2.x[2 * df : 3 * df] # @unusedvariable
+
+probmat = res2.x[3*df:]
+probmat = np.asmatrix(probmat).reshape((df, df-1))
+probmat = np.asmatrix(np.hstack([probmat, 1 - probmat.sum(axis = 1)]))
+
 print(res2)
 
-psmooth = ham_smooth(theta, x, y)
-# print(res)
+theta = [ -5,10,5 ] + [ 1,4,7 ] + [ 1,1,1 ] + [ 0.5,0.3, 0.5,0.2, 0.5,0.1 ]
+
+mrs_est(theta, x, y, df)
 
 print("")
     

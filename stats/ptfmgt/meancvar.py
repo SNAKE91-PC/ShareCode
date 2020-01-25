@@ -23,7 +23,7 @@ rivs = ivs.rvs(size = 2)
 
 
 idxVar = 0
-nSim = 500
+nSim = 1000
     
 retStocks = np.random.multivariate_normal(mean = np.zeros(df), cov = rivs[idxVar], size = nSim)
 muPort = np.random.uniform(low =-1, high = 1, size = int(nSim))
@@ -88,15 +88,19 @@ def EmpiricalOptim(args):#covmatrix, muStocks, muPort, option):
         
     def consfunc(x, muStocks, muPort):
     
-        return np.max( [np.abs(np.sum(x) - 1), np.abs(RetPort(x, muStocks) / muPort - 1)])
-#         return np.min([np.log(np.abs(np.sum(x))),  np.log(np.abs(RetPort(x, muStocks)/muPort))])
+        res = np.max([ np.abs(np.sum(x) - 1), np.abs(RetPort(x, muStocks)/muPort - 1) ])
+        
+        return res
 
     cons = {'type': 'eq', 'fun' : lambda x: consfunc(x, muStocks, muPort)}
     
     ub = spo.minimize(fun = objfunction, x0 = x0, args = (retStocks, perc), bounds = bounds, constraints = cons, method = 'trust-constr')
+
+    retP = RetPort(ub.x, muStocks)
     
-    print(1-np.sum(ub.x))
-    return (ub.fun, RetPort(ub.x, muStocks), np.sum(ub.x))
+    print(1-np.sum(ub.x), retP - muPort)
+    
+    return (ub.fun, retP, np.sum(ub.x))
 
 
 ncore = 4
@@ -114,4 +118,7 @@ yret = list(map(lambda x: x[1], x))
 plt.scatter(xvar, yret)
 
 print("")
-
+    
+    
+    
+    

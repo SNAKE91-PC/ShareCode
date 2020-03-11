@@ -38,4 +38,32 @@ def block2():
     print("")
     
     
-block2()
+def block3():
+    x = np.linspace(1,10,10000)
+    dx  = 0.001#x[1] - x[0], y[1] - y[0]
+#     X, Y = np.meshgrid(x, indexing='ij')
+    f = x**2  #np.sin(X) * np.cos(Y) * np.sin(Z)
+    
+    D = fd.FinDiff((0, dx, 1))
+    res = D(f)
+    
+    plt.plot(x,res)
+    print(res)
+    
+    print("")
+    
+    
+block3()
+
+
+
+x = np.linspace(1,10+1/1000,1000)
+y = x**2
+dy = np.gradient(y)
+
+plt.plot(x,dy)
+
+
+
+
+

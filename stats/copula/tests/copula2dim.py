@@ -11,8 +11,8 @@ import pathos.pools as pp
 import pandas as pd
     
     
-from copula.copulasim import conditionalCopula
-from copula.copulafunc import clayton
+from copula.copulasim import conditionalCopula1
+# from copula.copulafunc import clayton
 # TODO: rewrite with **kwargs instead of the explicit theta
 # f = lambda u,v, theta: (u*v) / (u+v-u*v)
 # 
@@ -27,28 +27,37 @@ from copula.copulafunc import clayton
 
 if __name__ == '__main__':
     
+    import scipy.stats as st
+
+    def clayton(theta, *x):
+    
+        if len(x)==1:
+            x = x[0]
+            
+        return (x[0]**(-theta) + x[1]**(-theta)-1)**(-1/theta)
 
     f = clayton
     v = np.random.uniform(size = 10000) #target
 
     pool = pp.ProcessPool(4)
     
-    theta = 40
+    theta = 10
 
     data = list(map(lambda x: tuple([x, f, theta]), v))
-    copulaList = pool.map(conditionalCopula, data)
+    copulaList = pool.map(conditionalCopula1, data)
     
     x = np.array(list(map(lambda x: x[0], copulaList)))
     y = np.array(list(map(lambda x: x[1], copulaList)))
     
-
-    
+    xsample = x
+    ysample = y
 #     plt.figure()
 #     plt.scatter(x,y, s=0.1)
     
     C = f(x,y,theta)    
     
-    
+    plt.scatter(st.norm.ppf(x),st.norm.ppf(y), s = 0.7)
+
     data = pd.DataFrame({'x': x, 'y': y, 'C': C})
     data.to_csv("/home/snake91/data.csv", index = False)
     

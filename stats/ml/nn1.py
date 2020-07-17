@@ -1,80 +1,64 @@
-'''
-Created on 18 Jan 2020
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Tuesday Oct 2, 2018
+@author: Madhuri Suthar, PhD Candidate in Electrical and Computer Engineering, UCLA
+"""
 
-@author: snake91
-'''
+# Imports
+import numpy as np 
+      
+# Each row is a training example, each column is a feature  [X1, X2, X3]
+X=np.array(([0,0,1],[0,1,1],[1,0,1],[1,1,1]), dtype=float)
+y=np.array(([0],[1],[1],[0]), dtype=float)
 
-import numpy as np
-import matplotlib.pyplot as plt
+# Define useful functions    
 
-from algopy import UTPM
+# Activation function
+def sigmoid(t):
+    return 1/(1+np.exp(-t))
 
-def sigmoid(x):
-    return 1.0/(1+ np.exp(-x))
+# Derivative of sigmoid
+def sigmoid_derivative(p):
+    return p * (1 - p)
 
-def sigmoid_derivative(x):
-    return x * (1.0 - x)
-
+# Class definition
 class NeuralNetwork:
-    def __init__(self, x, y):
+    def __init__(self, x,y):
+        self.input = x
+        self.weights1= np.random.rand(self.input.shape[1],4) # considering we have 4 nodes in the hidden layer
+        self.weights2 = np.random.rand(4,1)
+        self.y = y
+        self.output = np.zeros(y.shape)
         
-        self.input      = x
-        self.weights1   = np.random.rand(self.input.shape[1], y.shape[0]) 
-#         self.weights2   = np.random.rand(4,1)                 
-        self.y          = y
-        self.output     = np.zeros(self.y.shape)
-#         self.series = np.array([])
-
     def feedforward(self):
-#         self.layer1 = sigmoid(np.dot(self.input, self.weights1))
-#         self.output = sigmoid(np.dot(self.layer1, self.weights2))
-        self.output = sigmoid(np.dot(self.input, self.weights1))
-
-
-    def backprop(self):
-        # application of the chain rule to find derivative of the loss function with respect to weights2 and weights1
-        # it should be the same as finding min(y-y^) wrt weights (y^ = self.layer1)
-#         f = lambda x: x
-#         hes = UTPM.init_jacobian(self.layer1)
-#         y = f(hes)
-#         res = UTPM.extract_jacobian(y)#UTPM.extract_jacobian(y)
+        self.layer1 = sigmoid(np.dot(self.input, self.weights1))
+        self.layer2 = sigmoid(np.dot(self.layer1, self.weights2))
+        return self.layer2
         
-#         d_weights2 = np.dot(self.layer1.T, (2*(self.y - self.output) * sigmoid_derivative(self.output)))
-#         d_weights1 = np.dot(self.input.T,  (np.dot(2*(self.y - self.output) * sigmoid_derivative(self.output), self.weights2.T) * sigmoid_derivative(self.layer1)))
-
-        d_weights1 = np.dot(self.input.T, (2*(self.y - self.output) * sigmoid_derivative(self.output)))
-        # update the weights with the derivative (slope) of the loss function
+    def backprop(self):
+        d_weights2 = np.dot(self.layer1.T, 2*(self.y -self.output)*sigmoid_derivative(self.output))
+        d_weights1 = np.dot(self.input.T, np.dot(2*(self.y -self.output)*sigmoid_derivative(self.output), self.weights2.T)*sigmoid_derivative(self.layer1))
+    
         self.weights1 += d_weights1
-#         self.weights2 += d_weights2
+        self.weights2 += d_weights2
 
+    def train(self, X, y):
+        self.output = self.feedforward()
+        self.backprop()
+        
 
-if __name__ == "__main__":
-    # 3 regressors 4 outputs
-    X = np.array([[0,0,1],
-                  [0,1,1],
-                  [1,0,1],
-                  [1,1,1]])
-    y = np.array([[0],[1],[1],[0]])
-    nn = NeuralNetwork(X,y)
-
-    for i in range(100):
-        nn.feedforward()
-        print(np.mean(nn.y - np.dot(nn.input, nn.weights1))**2)
-        nn.backprop()
-
-    print(nn.output)
-    
-#     for i in range(0, len(nn.series)):
-#         plt.plot(nn.series[i], label = 'series' + str(i))
-#     
-#         plt.legend()
-    
-    
-    
-    
-    
-    
-    
+NN = NeuralNetwork(X,y)
+for i in range(1500): # trains the NN 1,000 times
+    if i % 100 ==0: 
+        print ("for iteration # " + str(i) + "\n")
+        print ("Input : \n" + str(X))
+        print ("Actual Output: \n" + str(y))
+        print ("Predicted Output: \n" + str(NN.feedforward()))
+        print ("Loss: \n" + str(np.mean(np.square(y - NN.feedforward())))) # mean sum squared loss
+        print ("\n")
+  
+    NN.train(X, y)
     
     
     

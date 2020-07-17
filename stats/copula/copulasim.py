@@ -5,10 +5,10 @@ Created on 2 Feb 2020
 '''
 
 import numpy as np
-import funcy
+# import funcy
 import scipy.optimize as spo
 import matplotlib.pyplot as plt
-
+from functools import partial
 
 # TODO: rename to biconditionalCopula
 def conditionalCopula1(args):
@@ -23,7 +23,7 @@ def conditionalCopula1(args):
             
             return ( f(theta, u + 10e-7, t) - f(theta, u, t) )/ 10e-7
     
-        g = funcy.rpartial(g, f = f, u = v, theta = theta)
+        g = partial(g, f = f, u = v, theta = theta)
     
         try:
             t = spo.brenth(lambda x: g(x) - u, 10e-7, 1-10e-7, xtol = 10e-7)

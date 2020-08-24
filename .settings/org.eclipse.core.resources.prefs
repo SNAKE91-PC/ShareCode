@@ -1,2 +1,5 @@
 eclipse.preferences.version=1
+encoding//mltests/housing/quotesbot-master/quotesbot/pipelines.py=utf-8
+encoding//mltests/housing/quotesbot-master/quotesbot/settings.py=utf-8
+encoding//mltests/housing/quotesbot-master/quotesbot/spiders/toscrape-css.py=utf-8
 encoding//stats/ml/nn1.py=utf-8

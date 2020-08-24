@@ -21,21 +21,31 @@ df = 200
 ivs = invwishart(df = df, scale = np.identity(df))
 rivs = ivs.rvs(size = 2)
 
+class dummy(object):
+    pass
 
 idxVar = 0
-nSim = 1000
+nSim = 100000
+nPoint = 100
     
 retStocks = np.random.multivariate_normal(mean = np.zeros(df), cov = rivs[idxVar], size = nSim)
-muPort = np.random.uniform(low =-1, high = 1, size = int(nSim))
+muPort = np.linspace(-1, 1, nPoint)
 perc = 97.5
 
 
-def VaRPort(params, retStocks, perc):
+def CVaRPort(params, retStocks, perc):
     
-    retScenarios = (params.T * retStocks).sum(axis = 1)
+    retScenarios = np.sort((params.T * retStocks).sum(axis = 1))
     percScenario = np.percentile(retScenarios, perc)
     
-    return percScenario + np.mean(list(filter(lambda x: x - percScenario >=0 , retScenarios)))   
+    return percScenario + np.mean(list(filter(lambda x: x - percScenario >=0 , retScenarios)))
+
+def VaRPort(params, retStocks, perc):
+    
+    retScenarios = np.sort((params.T * retStocks).sum(axis = 1))
+    percScenario = np.percentile(retScenarios, perc)
+    
+    return percScenario# + np.mean(list(filter(lambda x: x - percScenario >=0 , retScenarios)))
 #     return np.dot(np.dot(params.T, sigma), params)
 
 def RetPort(params, mu):
@@ -55,6 +65,7 @@ def EmpiricalOptim(args):#covmatrix, muStocks, muPort, option):
                 mean-variance-kurt
     """
     
+    print("starting..", args[-1])
     retStocks = args[0]
     muPort = args[1] # target
     muStocks = np.mean(retStocks, axis = 0) # empirical mean
@@ -79,6 +90,8 @@ def EmpiricalOptim(args):#covmatrix, muStocks, muPort, option):
         raise NotImplementedError
         
     if optionDict['criterion'] == 'mean-cvar':
+        objfunction = CVaRPort
+    elif optionDict["criterion"] == 'mean-var':
         objfunction = VaRPort
     elif optionDict['criterion'] == 'mean-variance-kurt':
         not NotImplementedError
@@ -94,19 +107,27 @@ def EmpiricalOptim(args):#covmatrix, muStocks, muPort, option):
 
     cons = {'type': 'eq', 'fun' : lambda x: consfunc(x, muStocks, muPort)}
     
-    ub = spo.minimize(fun = objfunction, x0 = x0, args = (retStocks, perc), bounds = bounds, constraints = cons, method = 'trust-constr')
+    ub = dummy()
+    ub.x = 0
+    retP = 0
+    
+    while np.max([1-np.sum(ub.x), retP - muPort]) >= 10e-8:
+        
+        retStocksSample = retStocks[np.random.choice(retStocks.shape[0], 500, replace=False)] #250d of 200 stocks
+        
+        ub = spo.minimize(fun = objfunction, x0 = x0, args = (retStocksSample, perc), bounds = bounds, constraints = cons, method = 'trust-constr')
 
-    retP = RetPort(ub.x, muStocks)
+        retP = RetPort(ub.x, muStocks)
     
     print(1-np.sum(ub.x), retP - muPort)
     
     return (ub.fun, retP, np.sum(ub.x))
 
 
-ncore = 4
+ncore = 6
 pool = pp.ProcessPool(ncore)
 
-dataUb = zip([retStocks]*nSim, muPort, [{'support' : 'unbounded', 'criterion' : 'mean-cvar'}] * nSim) 
+dataUb = zip([retStocks]*nPoint, muPort, [{'support' : 'unbounded', 'criterion' : 'mean-var'}] * nPoint, list(np.arange(nPoint/ncore)) * ncore) 
 
 x = pool.map(EmpiricalOptim, dataUb)
 

@@ -1,14 +1,15 @@
 ---
 title: "Study on convergence properties of econometric processes"
 author: "Vittorio Apicella"
-date: "20/12/2019"
+date: "`r Sys.Date()`"
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, engine.path = '/usr/bin/python3.7', warning = FALSE, cache.lazy = FALSE)
+library("r2d3")
+knitr::opts_chunk$set(echo = TRUE, engine.path = '/usr/bin/python3.8', warning = FALSE, cache.lazy = FALSE)
 library("reticulate")
-use_python("/usr/bin/python3.7", required = TRUE)
+use_python("/usr/bin/python3.8", required = TRUE)
 
 sys = import("sys")
 os = import("os")
@@ -32,7 +33,7 @@ Below we compare a Gaussian and Student t process.
 
 ```{python simARStudent, echo=FALSE}
 import PyQt5
-from simulate import arpStudent, arpGaussian
+from mle.simulate import arpStudent, arpGaussian
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -73,8 +74,8 @@ Let's compute the estimates via MLE
 
 
 ```{python estARStudent, echo=FALSE}
-import likelihood as logL
-import constraint as cons
+import mle.likelihood as logL
+import mle.constraint as cons
 import scipy.optimize as opt
 
 x0 = tuple([0. for i in range(len(phi))])
@@ -96,11 +97,11 @@ paramsGaussian = opt.minimize(logL.maxARpN, x0 = x0, \
                       
 ```
 
+
 Below the estimated parameters for both the processes
 ```{python paramsStudent, echo = FALSE}
 print(paramsStudent)
 ```
-
 ```{python paramsGaussian, echo = FALSE}
 print(paramsGaussian)
 ```
@@ -108,5 +109,16 @@ print(paramsGaussian)
 
 Finally, we run some convergence tests, below the plot with deviation from the true parameter
 
+```{r, echo = FALSE}
+htmltools::includeHTML("/home/snake91/git/ShareCode/stats/mle/rmdecon/plot.html")
+```
 
 
+```{python, echo = FALSE}
+data_piechart=[{"values": [{"label": "Orange", "value": 3}, {"label": "Banana", "value": 4}, {"label": "Pear", "value": 0}, {"label": "Kiwi", "value": 1}, {"label": "Apple", "value": 5}, {"label": "Strawberry", "value": 7}, {"label": "Pineapple", "value": 3}], "key": "Serie 1"}];
+```
+
+```{r, echo = FALSE}
+#r2d3(d3_version = 4, script = "stackedbars.js", css = "stackedbars.css")
+
+```

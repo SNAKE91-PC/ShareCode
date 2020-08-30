@@ -22,7 +22,7 @@ def host(idhost):
 pool.ncpus = 20
 print("Evaluate on "+str(pool.ncpus)+" cpus")
 
-pool.servers = ('192.168.1.113:5653', '192.168.1. :5654')
+pool.servers = ('192.168.1.113:5653', '192.168.1.109:5654')
 
 res5 = pool.amap( host, range(16) )
 while not res5.ready():

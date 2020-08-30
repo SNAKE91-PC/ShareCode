@@ -828,7 +828,9 @@ def arma11Student(t, phi = 0.1, psi = 0.1, df = 10):
 
 
 def arpGaussian(t, phi = [0.1], y0 = None):
-    
+
+    if type(phi)!= list:
+        raise Exception("phi must be a list")    
     if y0 is None:
         y0 = list(np.zeros(len(phi)))
     

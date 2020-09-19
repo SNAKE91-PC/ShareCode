@@ -11,7 +11,9 @@ import pathos.pools as pp
 import pandas as pd
     
     
-from copula.copulasim import conditionalCopula1
+from copula.copulasim import conditionalCopula2
+from copula.copulafunc import clayton
+
 # from copula.copulafunc import clayton
 # TODO: rewrite with **kwargs instead of the explicit theta
 # f = lambda u,v, theta: (u*v) / (u+v-u*v)
@@ -29,39 +31,54 @@ if __name__ == '__main__':
     
     import scipy.stats as st
 
-    def clayton(theta, *x):
-    
-        if len(x)==1:
-            x = x[0]
-            
-        return (x[0]**(-theta) + x[1]**(-theta)-1)**(-1/theta)
-
     f = clayton
-    v = np.random.uniform(size = 10000) #target
+    
+    np.random.seed(10)
+    
+    v1 = np.random.uniform(size = 10000) #v1 ---> v2
+    q =  np.random.uniform(size = 10000) #quantile
 
-    pool = pp.ProcessPool(4)
+    pool = pp.ProcessPool(16)
     
     theta = 10
 
-    data = list(map(lambda x: tuple([x, f, theta]), v))
-    copulaList = pool.map(conditionalCopula1, data)
+    pairsvq = list(zip(list(v1), list(q)))
+    data = list(map(lambda x: tuple([x, f, theta]), pairsvq))
+    copulaList = pool.map(conditionalCopula2, data)
     
-    x = np.array(list(map(lambda x: x[0], copulaList)))
-    y = np.array(list(map(lambda x: x[1], copulaList)))
+    xy = np.array(list(map(lambda x: x[0], copulaList)))
+    q = np.array(list(map(lambda x: x[1], copulaList)))
+    q = np.reshape(q, (q.shape[0],1))
+
+    idxNones = [i for i in range(xy.shape[0]) if xy[i,1] is None] 
+    xyq = np.hstack([xy, q])
+    xyqNones = xyq[idxNones]
+
+
     
-    xsample = x
-    ysample = y
+    plt.scatter(list(map(lambda x: x[0], xyqNones)), list(map(lambda x: x[2], xyqNones)))
+
+
+    xsample = list(map(lambda x: x[0], xy))
+    ysample = list(map(lambda x: x[1], xy))
 #     plt.figure()
 #     plt.scatter(x,y, s=0.1)
-    
-    C = f(x,y,theta)    
-    
-    plt.scatter(st.norm.ppf(x),st.norm.ppf(y), s = 0.7)
 
-    data = pd.DataFrame({'x': x, 'y': y, 'C': C})
-    data.to_csv("/home/snake91/data.csv", index = False)
+    
+    C = list(map(lambda x: f(theta, x[0], x[1]), list(zip(xsample, ysample))))
+    
+    plt.scatter(st.norm.ppf(xsample),st.norm.ppf(ysample), s = 0.7)
+
+    data = pd.DataFrame({'x': xsample, 'y': ysample, 'C': C})
+    
+#     data.to_csv("/home/snake91/data.csv", index = False)
     
     print("done")
+    
+    
+    
+    
+    
 #     plt.scatter(x,z, s = 0.1)
 #     
 #     fig = plt.figure()

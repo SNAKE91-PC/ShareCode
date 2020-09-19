@@ -9,8 +9,14 @@ import numpy as np
 import scipy.optimize as spo
 import matplotlib.pyplot as plt
 from functools import partial
+import pandas as pd
+
+import tensorflow as tf
 
 # TODO: rename to biconditionalCopula
+
+
+# TODO: REWRITE USING TENSORFLOW DERIVATIVES
 def conditionalCopula1(args):
     
     v, f, theta = args
@@ -41,66 +47,44 @@ def conditionalCopula1(args):
     return (v, t)
 
 
-def conditionalCopula2(args, f, theta):
+def conditionalCopula2(args):
     
-    from algopy import UTPM
+    v1, q = args[0]
+    f, theta = args[1:] # v1, quantile 
 
-#     def g1(theta, f, u,t):
-#     
-#         a = UTPM.init_jacobian([u,t])
-#         y = f(theta, a)
-#         res = UTPM.extract_jacobian(y)#UTPM.extract_jacobian(y)
-# 
-#         return res[0]
+    def g(v2, v1, theta, f):
 
-    def g(theta, f, args):
+        with tf.GradientTape(persistent=True) as g:
+            g.watch([v1])
+            z = f(theta, v1, v2)
 
-        hes = UTPM.init_jacobian(args)
-        y = f(theta, hes)
-        res = UTPM.extract_jacobian(y)#UTPM.extract_jacobian(y)
+        dy_da = g.gradient(z, v1)  
         
-        return res[1]
-        
-        
-#     if len(args) == 3:
-#         v, f, theta = args
-#         g = g1
-#     elif len(args) == 4:
-#         v, b, f, theta = args
-#         g = g2
+        return dy_da.numpy()
 
-    u = args[0]
-    args = args[1:]
-    while True:
+#     while True:
         
-#         u = np.random.uniform() # source
-
-#         if len(args) == 3:
-# #             g = funcy.rpartial(g,  u = v, theta = theta, f = f)
-#             gtmp = lambda t: g(theta, f, v, t)
-#             
-            
-#         elif len(args) == 4:
-#             g = funcy.rpartial(g, f = f, theta = theta, u = v, t = b)
-#         gtmp = lambda t: g(theta, f, args[:-1])
+    try:
+#         t = g(tf.constant(v2, dtype = tf.float32), tf.constant(v1, dtype = tf.float32), theta, f) - q
+        t = spo.brenth(lambda v2: g(tf.constant(v2, dtype = tf.float32), tf.constant(v1, dtype = tf.float32), theta, f) - q, 10e-6, 1-10e-6, xtol = 10e-10)
+#         t = spo.minimize(lambda v2: g(tf.constant(v2, dtype = tf.float32), tf.constant(v1, dtype = tf.float32), theta, f) - q, 10e-6, 1-10e-6, xtol = 10e-10)
+    except ValueError as e:
+        print(e, q, v1, theta)#, u, v, sep = " ")
+        
+        inputs = list(args[0][0:-1]) + [None]
+        q = args[0][-1]
+        func = args[1:]
     
-
-#         gtmp = lambda x: g(theta, f, args[:-1])
-        
-        try:
-#             t = spo.brenth(lambda x: gtmp(x) - u, 10e-6, 1-10e-6, xtol = 10e-10)
-            t = spo.brenth(lambda x: g(theta, f, [x] + list(args)) - u, 10e-6, 1-10e-6, xtol = 10e-10)
-#             t = spo.newton_krylov(F = lambda x: g(x) - u, xin = (1-u))[0]
-#             t = spo.minimize(fun = lambda x: (g(x) - u)**2, x0 = (u,), bounds = [(10e-7,1-10e-7)], tol = 10e-16).x[0]
-        except Exception as e:
-            print(e, args[0], u, theta)#, u, v, sep = " ")
-#             plt.plot(np.linspace(10e-5,1-10e-5,1000), g(np.linspace(10e-5,1-10e-5,10000)))
-#             v = np.random.uniform()
-                
-        else:
-            break
+        return (inputs, q, func)
+#     else:
+#         print("impossible")
+#         break
     
     
-    return (*args, t)
+    inputs = list(args[0][0:-1]) + [t]
+    q = args[0][-1]
+    func = args[1:]
+    
+    return (inputs, q, func)#(*args, t)
 
 

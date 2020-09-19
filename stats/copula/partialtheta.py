@@ -27,11 +27,11 @@ import pathos.pools as pp
 import pandas as pd
 
 from copula.copulamle import copulamle
-from copula.copulasim import conditionalCopula
+from copula.copulasim import conditionalCopula1
 from copula import copulafunc
     
         
-
+        
 
 def partialtheta(f, theta1, theta2):
         
@@ -43,7 +43,7 @@ def partialtheta(f, theta1, theta2):
     pool = pp.ProcessPool(4, servers = ['localhost:9090'])
     
     dataX = list(map(lambda x: tuple([x, f, theta1]), v))
-    copulaListX = pool.map(conditionalCopula, dataX)
+    copulaListX = pool.map(conditionalCopula1, dataX)
     
     x = np.array(list(map(lambda x: x[0], copulaListX)))
     y = np.array(list(map(lambda x: x[1], copulaListX)))
@@ -51,7 +51,7 @@ def partialtheta(f, theta1, theta2):
     Cxy = f(theta1, x,y)    
     
     dataXY = list(map(lambda x: tuple([x, f, theta2]), Cxy))
-    copulaList = pool.map(conditionalCopula, dataXY)
+    copulaList = pool.map(conditionalCopula1, dataXY)
     
     z = np.array(list(map(lambda x: x[1], copulaList)))
     

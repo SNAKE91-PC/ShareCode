@@ -7,6 +7,14 @@
   <component name="RMarkdownSettings">
     <option name="renderProfiles">
       <map>
+        <entry key="file://$PROJECT_DIR$/stats/copula/nb/copulasim.rmd">
+          <value>
+            <RMarkdownRenderProfile>
+              <option name="lastOutput" value="$PROJECT_DIR$/stats/copula/nb/copulasim.pdf" />
+              <option name="outputDirectoryUrl" value="file://$PROJECT_DIR$/stats/copula/nb" />
+            </RMarkdownRenderProfile>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/stats/mle/econ.Rmd">
           <value>
             <RMarkdownRenderProfile>

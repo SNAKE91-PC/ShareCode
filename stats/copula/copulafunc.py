@@ -28,8 +28,6 @@ def clayton(theta, *args):
      
     out = 0
  
-    
- 
     for i in range(len(args)):
         
 #         try:

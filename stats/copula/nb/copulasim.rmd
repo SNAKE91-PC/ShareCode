@@ -1,0 +1,203 @@
+---
+title: "Copula simulation"
+author: snake91
+date: 19/09/2020
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+library("r2d3")
+knitr::opts_chunk$set(echo = TRUE, engine.path = '/home/snake91/git/ShareCode/venv/bin/python3.8', warning = FALSE, cache.lazy = FALSE)
+library("reticulate")
+use_python("/home/snake91/git/ShareCode/venv/bin/python3.8", required = TRUE)
+
+sys = import("sys")
+os = import("os")
+```
+
+```{python settings, echo = FALSE}
+import os
+import sys
+
+sys.path.append(os.getcwd().split("/copula")[0])
+
+```
+
+## Copula simulation
+
+In general copula simulation is performed with the following relation
+
+$$\frac{\delta C(u_1, u_2) } {\delta u_1} - q $$
+
+with $u_1$ is the first variate, $q$ is the desidered quantile the variate $u_2$ should sits on. The calculation is performed simply by computing the value of $u_2$ for which the function above is zero. Below an application to the Clayton copula.
+
+
+## Clayton copula simulation
+
+Clayton copula in 2-dimension is described by
+
+$$C(u_1, u_2) = (u_1^{-\theta} + u_2^{-\theta})^{-\frac{1}{\theta} } $$
+
+We show below the simulation
+
+```{python imports, echo = FALSE}
+
+import numpy as np
+import matplotlib.pyplot as plt
+import pathos.pools as pp
+import pandas as pd
+
+from copula.copulasim import conditionalCopula2
+from copula.copulafunc import clayton
+
+import matplotlib as mpl
+plt.rcParams.update({
+    "text.usetex": True,
+    "font.family": "sans-serif",
+    "font.sans-serif": ["Helvetica"]})
+## for Palatino and other serif fonts use:
+plt.rcParams.update({
+    "text.usetex": True,
+    "font.family": "serif",
+    "font.serif": ["Palatino"],
+    "font.size" : 7
+})
+
+```
+
+```{python simulation, echo = TRUE, eval = TRUE}
+
+
+if __name__ == '__main__':
+
+    f = clayton
+
+    np.random.seed(10)
+
+    v1 = np.random.uniform(size = 1000) #v1 ---> v2
+    q =  np.random.uniform(size = 1000) #quantile
+
+    pool = pp.ProcessPool(16)
+
+    theta = 10
+
+    pairsvq = list(zip(list(v1), list(q)))
+    data = list(map(lambda x: tuple([x, f, theta]), pairsvq))
+    copulaList = pool.map(conditionalCopula2, data)
+
+    xy = np.array(list(map(lambda x: x[0], copulaList)))
+    q = np.array(list(map(lambda x: x[1], copulaList)))
+    q = np.reshape(q, (q.shape[0],1))
+
+```
+
+```{python plotting, echo = FALSE, eval = FALSE}
+
+xsample = list(map(lambda x: x[0], xy))
+ysample = list(map(lambda x: x[1], xy))
+
+plt.scatter(xsample, ysample, s = 0.8)
+plt.xlim(xmax = 1, xmin = 0)
+plt.ylim(ymax = 1, ymin = 0)
+plt.show()
+```
+
+We show below level curves for Clayton copula (not a simulation)
+
+
+```{python more, echo = FALSE, eval = FALSE}
+
+if __name__ == '__main__':
+
+    f = clayton
+    Nlines = 100
+
+    np.random.seed(10)
+
+    def qFunction():
+
+        v1 = np.linspace(10e-6, 1-10e-6, 1000)
+        for qidx in np.linspace(10e-6, 1-10e-6, Nlines):
+
+            q =  np.array([qidx] * len(v1))
+
+            pool = pp.ProcessPool(16)
+
+            theta = 10
+
+            pairsvq = list(zip(list(v1), list(q)))
+            data = list(map(lambda x: tuple([x, f, theta]), pairsvq))
+            copulaList = pool.map(conditionalCopula2, data)
+
+            xy = np.array(list(map(lambda x: x[0], copulaList)))
+            q = np.array(list(map(lambda x: x[1], copulaList)))
+            q = np.reshape(q, (q.shape[0],1))
+
+            yield xy
+
+```
+
+
+```{python plotting2, echo = FALSE, eval = FALSE}
+
+out = qFunction()
+
+import cycler
+
+i = 0
+
+r = 1
+b = 0
+g = 0
+a = 1/Nlines
+
+for xy in out:
+
+    i += 1
+
+    if i <= Nlines/2:
+        a += 1/Nlines
+    if i >  Nlines/2:
+        a -= 1/Nlines
+
+    color = ((r,b,g,a))
+    xsample = list(map(lambda x: x[0], xy))
+    ysample = list(map(lambda x: x[1], xy))
+
+    plt.plot(xsample, ysample, linewidth = 0.9, color = color)
+
+plt.xlim(xmax = 1, xmin = 0)
+plt.ylim(ymax = 1, ymin = 0)
+
+plt.show()
+```
+
+
+Now we show how to simulate a 3-dimension copula, using a vine copula construction method
+
+$$C_2(C_1(u_1, u_2, \theta_1), u_3, \theta_2)$$
+
+We're going to deal with this problem in this way
+
+1) we calculate $u_2$ exactly as before
+2) after we calculated $u_2$, we set $q = C_1(u_1, u_2, \theta_1)$, hence we obtain $C_2( u_2, u_3, \theta_2) =  q$
+3) we calculate $u_3$ as in 1)
+
+
+
+```{python dim3}
+
+
+
+```
+
+
+
+
+
+
+
+
+
+
+

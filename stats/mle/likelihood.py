@@ -27,48 +27,6 @@ def est_markovchain(tseries):
     return transmat / np.sum(transmat, axis = 0) 
 
 
-
-def maxMSIID(params, x, prob0 = 0.5):
-    
-    N = lambda x, mu, sigma : np.max([10e-8, (1./np.sqrt(2*np.pi*sigma**2)) * np.exp(-(x-mu)**2 / (2*sigma**2))])
-    
-    mu0, sigma0 = params[0:2]
-    mu1, sigma1 = params[2:4]
-    
-#     dim = np.int(np.sqrt(len(params[4:])))
-    transmat = np.asmatrix(params[4:])
-#     transmat = np.reshape(transmat, newshape = (dim, dim))
-    if  np.sum(transmat) != 1:
-        return np.inf   
-    
-    print(mu0, sigma0, mu1, sigma1, np.sum(transmat), sep = ' ')
-    
-    
-    inference = []
-    forecast = []
-    for i in range(len(x)):
-    
-        if i == 0:
-            ### computing P(S0 = 0 | Y0 = y0)
-            logp = np.log(N(x[0], mu0, sigma0)) + np.log(prob0) -  np.log( N(x[0], mu0, sigma0) * prob0 + N(x[0], mu1, sigma1) * (1-prob0) )
-            
-            inference.append(logp)                                                                                                                                           
-        else:
-            # P S2 | Y1 = y1
-            logpfor = np.log(transmat[0,0]) + inference[i-1] + np.log(transmat[0,1]) + np.log(1-np.exp(inference[i-1]))#np.log(N(x[i], mu1, sigma1))
-
-            forecast.append(logpfor)
-            # P S2 | Y2 = y2
-            logpinf = np.log(N(x[i], mu0, sigma0)) + forecast[i-1] - np.log(N(x[i], mu0, sigma0) * np.exp(forecast[i-1]) + N(x[i], mu1, sigma1) * (1-np.exp(forecast[i-1])) )   
-             
-            inference.append(logpinf)
-
-            
-    print(-np.sum(inference))
-    return -np.sum(inference)
-
-
-
 def maxMGARCHECCCpqN(X, alpha, beta):
     # TODO: parameter parsing should be unified in some other method
     '''

@@ -15,6 +15,27 @@ flatten = lambda l: [item for sublist in l for item in sublist]
 
 def sim_markovchain(t, pmatrix, startvalue):
     
+    """    
+        pmatrix = {0: [0.8, 0.2], 1 : [0.4, 0.6]}
+    
+    """
+
+    ### validate input
+    
+    if startvalue not in pmatrix.keys():
+        print("startvalue not in possible states")
+        raise Exception
+
+    for state in pmatrix.keys():
+        prob = pmatrix[state]
+        if sum(prob) != 1:
+            print("transition probabilities for state " + str() + " don't sum to 1")
+            raise Exception
+        else:
+            pass
+        
+    #### input validated
+
     sample = [startvalue]
     a = np.arange(0, len(pmatrix.keys()))
     for idx in range(1, t):
@@ -22,7 +43,7 @@ def sim_markovchain(t, pmatrix, startvalue):
         value =  np.random.choice(a, size = 1, p = pmatrix[sample[idx-1]])[0]
         sample.append(value)
         
-    return sample
+    return np.array(sample)
 
 
 def msiidN(t, transmat, startstate, paramsmean, paramsvar):

@@ -28,23 +28,30 @@ dev_x = pd.Series(dev_x)
 
 def strategy(w, dev_x, horizon):
 
-    w1 = int(w[0])
-    w2 = int(w[1])
+    w1 = int(w[0]) # long
+    w2 = int(w[1]) # short
     
-    if w1 == 0 or w2 == 0:
+    if w1 == 0 or w2 == 0:# or w2 < w1:
         return (w1, w2, np.nan)
     
     
-    strat1 = pd.Series(dev_x).rolling(window = w1).apply(np.mean)
-    strat2 = pd.Series(dev_x).rolling(window = w2).apply(np.mean)
+    strat1 = pd.Series(dev_x).rolling(window = w1).apply(np.mean) # long
+    strat2 = pd.Series(dev_x).rolling(window = w2).apply(np.mean) # short
 
-    entrypoint = pd.Series(np.where(strat2 > strat1, 1, 0))
+    entrypoint = pd.Series(np.where(strat2 < strat1, 1, -1)) # short < long, buy, otherwise sell
     
     data = pd.DataFrame([dev_x, entrypoint, dev_x.shift(horizon)]).transpose()
     
     data.columns = ["dev_x", "entry", "dev_xshift"]
 
-    data = data[data["entry"] == 1]
+    ret = []
+    for i in range(len(data)):
+        
+        data.loc[i]
+        ret.append()
+    
+#     data["wprice"] = np.cumsum(data["dev_x"] * data["entry"])
+    
         
     ret = np.mean( (data["dev_xshift"] - data["dev_x"]) / data["dev_x"] )
     
@@ -80,7 +87,7 @@ arr = np.array(list(filter(lambda x: x[0] > x[1], arr)))
 
 arr = np.vstack([np.zeros((100-50,2)), arr])
 
-pool = pp.ProcessPool(16)
+pool = pp.ProcessPool(1)
 
 profit = list(pool.map(lambda x: strategy(x, dev_x, horizon), arr))
 

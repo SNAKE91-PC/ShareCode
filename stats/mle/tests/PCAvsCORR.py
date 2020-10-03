@@ -15,6 +15,8 @@ from sklearn.decomposition import PCA
 
 ### AR
 
+### the point here is showing PCA finds the most relevant lags as autocorrelations
+
 lags = 20
 
 phi = [0.999]

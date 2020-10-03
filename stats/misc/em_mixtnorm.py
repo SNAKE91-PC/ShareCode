@@ -36,8 +36,6 @@ def em_algorithm(X, states, pdf, maxiter = 25):
             # use the current values for the parameters to evaluate the posterior
             # probabilities of the data to have been generanted by each gaussian    
             
-            # bayes theorem
-            # posterior = likelihood x prior / evidence
             b.append((likelihood[j] * weights[j]) / (np.sum([likelihood[i] * weights[i] for i in range(k)], axis=0)))
           
             # updage mean and variance

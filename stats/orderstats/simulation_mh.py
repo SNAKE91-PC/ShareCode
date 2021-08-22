@@ -92,69 +92,12 @@ def mse(param, x, y):
     return err
 
 
-    
-n = 100000 # distribution of the maximum for a sample size of ten observation normally distributed
 
-samplesize = 20000
 f = lambda x: st.norm.cdf(x)**n
+
 g = lambda x: (f(x + 0.00001) - f(x))/ 0.00001
 # g = lambda x: n * st.norm.cdf(x)**(n-1) * st.norm.pdf(x)
+
 gumbelpdf = lambda x: np.exp(-x - np.exp(-x))
+
 gumbelquantile = lambda u: -np.log(-np.log(u))
-u = np.random.uniform(size = samplesize)
-
-
-accepted_trials_ordstat = MH(g, samplesize)
-ecdf_ordstat = ecdf(accepted_trials_ordstat)
-
-accepted_trials_gumbel = MH(gumbelpdf, samplesize)
-ecdf_gumbel = ecdf(accepted_trials_gumbel)
-
-true_gumbel = gumbelquantile(u)
-ecdf_truegumbel = ecdf(true_gumbel)
-
-# bounds = ((1/samplesize, 1-1/samplesize), (None, None), (None, None))
-param= spo.minimize(fun = mse, x0 = ((0, 0)), args = (ecdf_ordstat, ecdf_truegumbel))#, bounds = bounds)
-a,b = param.x
-accepted_trials_ordstat1 = a * np.array(accepted_trials_ordstat) - b
-
-print("a", 1/a, "b", b/a, sep = ' ') #"q", q, 
-
-b_n = st.norm.ppf(1-1/n)
-a_n = 1/(n * st.norm.pdf(b_n))
-
-print("a_n", a_n, "b_n", b_n, sep = ' ')
-accepted_trials_ordstat2 = a_n * np.array(accepted_trials_ordstat) - b_n  
-
-################ TODO: check this
-accepted_trials_ordstat3 = (np.percentile(accepted_trials_ordstat,75) - np.percentile(accepted_trials_ordstat,25)) * np.array(accepted_trials_ordstat) - np.median(accepted_trials_ordstat)  
-#############################
-
-
-ecdf_ordstat1 = [(a * i[0] - b, i[1]) for i in ecdf_ordstat]
-ecdf_ordstat2 = [((i[0] - b_n) / a_n, i[1]) for i in ecdf_ordstat]
-ecdf_ordstat3 = ecdf(accepted_trials_ordstat3)
- 
-plt.plot(list(map(lambda x: x[0], ecdf_ordstat1)), list(map(lambda x: x[1], ecdf_ordstat1)), label = 'ordstat max N(0,1) n=' + str(n) + " (MH) (emp approx)")
-plt.plot(list(map(lambda x: x[0], ecdf_ordstat2)), list(map(lambda x: x[1], ecdf_ordstat2)), label = 'ordstat max N(0,1) n= ' + str(n) + " (MH) (known approx)")
-
-
-plt.plot(list(map(lambda x: x[0], ecdf_ordstat3)), list(map(lambda x: x[1], ecdf_ordstat3)), label = 'ordstat max N(0,1) n= ' + str(n) + " (MH) (quartile approx)")
-
-
-# plt.plot(list(map(lambda x: x[0], ecdf_gumbel)), list(map(lambda x: x[1], ecdf_truegumbel)), label = 'gumbel EV (MH)')
-plt.plot(list(map(lambda x: x[0], ecdf_truegumbel)), list(map(lambda x: x[1], ecdf_truegumbel)), label = 'gumbel EV ')
-plt.legend()
-
-plt.figure()
-plt.hist(accepted_trials_ordstat1, bins = 200, histtype='step', label = 'ordstat max N(0,1) n=' + str(n) + " (MH) (emp approx)", normed = True)
-plt.hist(accepted_trials_ordstat2, bins = 200, histtype='step', label = 'ordstat max N(0,1) n= ' + str(n) + " (MH) (known approx)", normed = True)
-plt.hist(np.array(accepted_trials_gumbel), bins = 200, histtype='step', label = 'gumbel EV (MH)', normed = True)
-plt.hist(true_gumbel, bins = 200, histtype= 'step', label = 'gumbel EV (quantile)', normed = True)
-
-plt.legend()
-
-
-
-
-

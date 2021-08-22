@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 
 
 
-class GaussianRandomField:
+class Brownian2d:
     
     def __init__(self, people):
 
@@ -51,26 +51,34 @@ if __name__ == '__main__':
     from cpxnetw.animplot.animscatfunc import AnimatedScatter
     from cpxnetw.animplot.animlinefunc import AnimatedLine
 
-    cov = [[1,0.0],[0.0,1]]
+    
     
     task = "scatter"
     
     if task == "scatter":
-        engine1 = GaussianRandomField(people = 100)
-        engine2 = GaussianRandomField(people = 100)
+        engine1 = Brownian2d(people = 1000)
+        engine2 = Brownian2d(people = 1000)
         
-        particles1 = engine1.simulate(cov)
-        particles2 = engine2.simulate(cov)
+        cov1 = [[1,-0.9],[-0.9,1]]
+        particles1 = engine1.simulate(cov1)
         
-        scat1 = AnimatedScatter(particles1, nsmooth = 60)
-        scat2 = AnimatedScatter(particles2, nsmooth = 60, fig = scat1.fig, ax = scat1.ax, cmap = "hot")
+        cov2 = [[1,0.9],[0.9,1]]
+        particles2 = engine2.simulate(cov2)
         
-        plt.show()
+        scat1 = AnimatedScatter(particles1, nsmooth = 120, cmap = 'Blues', frames = 100)
+        scat2 = AnimatedScatter(particles2, nsmooth = 120, fig = scat1.fig, ax = scat1.ax, cmap = "Reds", frames = 100)
+        
+#         plt.show()
+        
+        scat1.save(r"D:\1.mp4")
         
     if task == "line":
-        engine1 = GaussianRandomField(people = 1)
-        engine2 = GaussianRandomField(people = 1)
-        engine3 = GaussianRandomField(people = 1)
+        
+        cov = [[1,0.0],[0.0,1]]
+        
+        engine1 = Brownian2d(people = 1)
+        engine2 = Brownian2d(people = 1)
+        engine3 = Brownian2d(people = 1)
 
         particles1 = engine1.simulate(cov)
         particles2 = engine2.simulate(cov)

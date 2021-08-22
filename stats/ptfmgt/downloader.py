@@ -17,7 +17,7 @@ import time
 
 
 import pandas_datareader.data as web
-from pandas_datareader._utils import RemoteDataError
+# from pandas_datareader._utils import RemoteDataError
 
 conn_str = (
     "DRIVER={PostgreSQL Unicode};" 

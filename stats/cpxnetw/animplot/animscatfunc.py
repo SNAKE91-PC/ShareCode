@@ -3,6 +3,7 @@ import matplotlib
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 import numpy as np
+from copy import deepcopy
 # from scipy.stats import gaussian_kde
 
 
@@ -11,7 +12,7 @@ import numpy as np
         
 class AnimatedScatter(object):
     """An animated scatter plot using matplotlib.animations.FuncAnimation."""
-    def __init__(self, datagen, nsmooth = 60, fig = None, ax = None, cmap = None):
+    def __init__(self, datagen, nsmooth = 60, fig = None, ax = None, cmap = None, frames = None):
 #         self.numpoints = numpoints
         self.stream = self.data_stream(datagen)
 
@@ -25,15 +26,18 @@ class AnimatedScatter(object):
         # Setup the figure and axes...
         
         if fig == None:
-            self.fig, self.ax = plt.subplots(dpi = 300)
+            self.fig, self.ax = plt.subplots(dpi = 150)
             self.cmap = cmap
         else:    
             self.fig = fig
             self.ax = ax
-            self.cmap = "blues"
+            self.cmap = cmap
             
         # Then setup FuncAnimation.
-        self.ani = animation.FuncAnimation(self.fig, self.update, interval=0.001, frames = 660, repeat = False,
+        if frames == None:
+            frames = 660
+            
+        self.ani = animation.FuncAnimation(self.fig, self.update, interval=1, frames = frames, repeat = False,
                                           init_func=self.setup_plot, blit=False)
 
     def setup_plot(self):
@@ -54,7 +58,7 @@ class AnimatedScatter(object):
         return self.scat,
 
     def smooth(self, args, n):
-
+        
         for t in np.linspace(0, 1 + 1/n, n):
             
             interpolation = args[0]*(1-t) + args[1]*t
@@ -151,7 +155,7 @@ class AnimatedScatter(object):
         
         # Set up formatting for the movie files
         Writer = animation.writers['ffmpeg']
-        writer = Writer(fps=self.nsmooth, metadata=dict(artist='Snake91'), bitrate = 10000) #, bitrate=8000, codec = "h264"
+        writer = Writer(fps=self.nsmooth, metadata=dict(artist='Snake91'), bitrate = 1000) #, bitrate=8000, codec = "h264"
         
         self.ani.save(path, writer=writer)
     

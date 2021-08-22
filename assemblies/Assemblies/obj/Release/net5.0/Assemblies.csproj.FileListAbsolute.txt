@@ -1,0 +1,12 @@
+C:\Users\Snake91\git\ShareCode\Assemblies\Assemblies\bin\Release\net5.0\Assemblies.deps.json
+C:\Users\Snake91\git\ShareCode\Assemblies\Assemblies\bin\Release\net5.0\Assemblies.dll
+C:\Users\Snake91\git\ShareCode\Assemblies\Assemblies\bin\Release\net5.0\ref\Assemblies.dll
+C:\Users\Snake91\git\ShareCode\Assemblies\Assemblies\bin\Release\net5.0\Assemblies.pdb
+C:\Users\Snake91\git\ShareCode\Assemblies\Assemblies\obj\Release\net5.0\Assemblies.csprojAssemblyReference.cache
+C:\Users\Snake91\git\ShareCode\Assemblies\Assemblies\obj\Release\net5.0\Assemblies.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Snake91\git\ShareCode\Assemblies\Assemblies\obj\Release\net5.0\Assemblies.AssemblyInfoInputs.cache
+C:\Users\Snake91\git\ShareCode\Assemblies\Assemblies\obj\Release\net5.0\Assemblies.AssemblyInfo.cs
+C:\Users\Snake91\git\ShareCode\Assemblies\Assemblies\obj\Release\net5.0\Assemblies.csproj.CoreCompileInputs.cache
+C:\Users\Snake91\git\ShareCode\Assemblies\Assemblies\obj\Release\net5.0\Assemblies.dll
+C:\Users\Snake91\git\ShareCode\Assemblies\Assemblies\obj\Release\net5.0\ref\Assemblies.dll
+C:\Users\Snake91\git\ShareCode\Assemblies\Assemblies\obj\Release\net5.0\Assemblies.pdb

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+
+    <style> /* set the CSS */
+
+    body { font: 12px Arial;}
+
+    path {
+        stroke: steelblue;
+        stroke-width: 2;
+        fill: none;
+    }
+
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: grey;
+        stroke-width: 1;
+        shape-rendering: crispEdges;
+    }
+
+    .legend {
+        font-size: 16px;
+        font-weight: bold;
+        text-anchor: middle;
+    }
+
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src = "https://cdnjs.cloudflare.com/ajax/libs/d3/7.0.0/d3.js"></script>
+
+    <!-- <script type="text/javascript" src = "/static/js/requests.js"></script>-->
+    <script type="text/javascript" src = "/static/js/line.js"></script>
+    <script type="text/javascript" src = "/static/js/homescripts.js"></script>
+
+
+
+    <title>Title</title>
+
+
+</head>
+
+
+
+
+
+
+<body>
+
+
+
+
+
+<form method="post" id = "form-button">
+
+    <div id="newElementId"><label>Name:<input type="text" class="input-name" value="" /></label>
+        <button type="button" class="btn-plus">+</button>
+
+    </div>
+
+</form>
+
+<button type = "button" id = "btn-go">Go!</button>
+
+<!--<div id="table"></div> -->
+/
+<div id="cumulativelinechart"><svg style="height:350px;">   </svg></div>
+
+
+
+
+
+
+</body>
+</html>

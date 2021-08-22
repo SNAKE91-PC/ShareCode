@@ -557,22 +557,36 @@ def maxARMApqN(params, x, p, q):
     L = []
     
     np.random.seed(1)
-    eList = list(np.random.normal(size = max(len(phi),len(psi)), loc = np.mean(x),scale = np.sqrt(np.var(x)))) #/(1+np.sum(psi))
+    mean = np.mean(x[~np.isnan(x)])
+    var = np.nanvar(x)
+    eList = list(np.random.normal(size = max(len(phi),len(psi)), loc = mean,scale = np.sqrt(var))) #/(1+np.sum(psi))
         
     for t in range(max(len(phi),len(psi)), len(x)):
         
         prediction = 0.
         
         for p in range(1, len(phi) + 1):
-            prediction += phi[p-1] * x[t-p]
+            if np.isnan(x[t-p]):
+                pass
+            else:
+                prediction += phi[p-1] * x[t-p]
             
         for q in range(1, len(psi) + 1):
-            prediction += psi[q-1] * eList[t-q]
-            
-        e = x[t] - prediction 
-        eList.append(e)
+            if np.isnan(x[t-p]):
+                pass
+            else:
+                prediction += psi[q-1] * eList[t-q]
     
-        p = N(x[t], prediction, sigma)
+        curr = x[t]
+        if np.isnan(x[t]):
+            curr = mean
+        if np.isnan(prediction):
+            prediction = mean
+
+        e = curr - prediction 
+        eList.append(e)
+        
+        p = N(curr, prediction, sigma)
         L.append(np.log(p))
         
     L = sum(L)

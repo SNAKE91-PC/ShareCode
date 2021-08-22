@@ -1,0 +1,826 @@
+1624184178641	geckodriver	INFO	Listening on 127.0.0.1:50487
+1624184187620	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Snake91\\AppData\\Local\\Temp\\rust_mozprofilewEZA4q"
+1624184188372	Marionette	INFO	Marionette enabled
+JavaScript warning: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/filter/antibanner.js, line 1158: unreachable code after return statement
+1624184190053	Marionette	INFO	Listening on port 58385
+1624184190271	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 108: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.274877906971
+1624184220246	Marionette	INFO	Stopped listening on port 58385
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1624184235532	geckodriver	INFO	Listening on 127.0.0.1:60826
+1624184244305	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Snake91\\AppData\\Local\\Temp\\rust_mozprofilekfVE3A"
+1624184245005	Marionette	INFO	Marionette enabled
+JavaScript warning: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/filter/antibanner.js, line 1158: unreachable code after return statement
+1624184246675	Marionette	INFO	Listening on port 49574
+1624184246972	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: https://asset.barrons.com/article/public/wsj_resp_article_16u.3de41f4a4ddd.js, line 9: TypeError: r is undefined
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript warning: https://www.wsj.com/puzzles/crossword/20210102/47707/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: https://asset.barrons.com/article/public/17f32040-0bfd-4790-bb36-732d32093176.f0c9b36cc479.js, line 44: TypeError: e.xhrFields is undefined
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 108: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.274877907020
+1624185546312	Marionette	INFO	Stopped listening on port 49574
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+4184387336	Marionette	INFO	Listening on port 50675
+1624184387828	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: https://asset.barrons.com/article/public/wsj_resp_article_16u.3de41f4a4ddd.js, line 9: TypeError: r is undefined
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://asset.barrons.com/article/public/wsj_resp_article_16u.3de41f4a4ddd.js, line 9: TypeError: r is undefined
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript warning: https://www.wsj.com/puzzles/crossword/20210102/47707/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: https://asset.barrons.com/article/public/wsj_resp_article_16u.3de41f4a4ddd.js, line 9: TypeError: r is undefined
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://asset.barrons.com/article/public/wsj_resp_article_16u.3de41f4a4ddd.js, line 9: TypeError: r is undefined
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: uncaught exception: Error parsing data
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+1624184637529	Marionette	INFO	Stopped listening on port 50675
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 108: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.274877907020
+1624185566726	geckodriver	INFO	Listening on 127.0.0.1:55841
+1624185575512	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Snake91\\AppData\\Local\\Temp\\rust_mozprofilehD3enp"
+1624185576283	Marionette	INFO	Marionette enabled
+JavaScript warning: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/filter/antibanner.js, line 1158: unreachable code after return statement
+1624185577767	Marionette	INFO	Listening on port 58639
+1624185578173	Marionette	WARN	TLS certificate errors will be ignored for this session
+1624185578214	Marionette	INFO	Stopped listening on port 58639
+console.error: services.settings: 
+  main/nimbus-desktop-defaults Signature failed  TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1030: Error: Sqlite.jsm has been shutdown. Cannot open connection to: C:\Users\Snake91\AppData\Local\Temp\rust_mozprofilehD3enp\protections.sqlite
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1624185602224	geckodriver	INFO	Listening on 127.0.0.1:53582
+1624185610884	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Snake91\\AppData\\Local\\Temp\\rust_mozprofiletqJVbA"
+1624185611574	Marionette	INFO	Marionette enabled
+JavaScript warning: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/filter/antibanner.js, line 1158: unreachable code after return statement
+1624185613091	Marionette	INFO	Listening on port 56566
+1624185613543	Marionette	WARN	TLS certificate errors will be ignored for this session
+1624185613579	Marionette	INFO	Stopped listening on port 56566
+[2021-06-20T10:40:14Z ERROR viaduct::backend::ffi] Missing HTTP status
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "Sqlite.jsm: wait until all connections are closed" is finished, it is too late to register completion condition "protections.sqlite#0: waiting for shutdown"
+1624185646461	geckodriver	INFO	Listening on 127.0.0.1:53172
+1624185667304	geckodriver	INFO	Listening on 127.0.0.1:51303
+1624185676140	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Snake91\\AppData\\Local\\Temp\\rust_mozprofile3TWAUp"
+1624185676836	Marionette	INFO	Marionette enabled
+JavaScript warning: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/filter/antibanner.js, line 1158: unreachable code after return statement
+1624185678301	Marionette	INFO	Listening on port 56862
+1624185678813	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/1185183583697973677/index.html#t=771684000252140242&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 1073: ReferenceError: stopGalleryCycle is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/1185183583697973677/index.html#t=771684000252140242&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 1429: TypeError: custom is undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: https://asset.barrons.com/article/public/wsj_resp_article_16u.3de41f4a4ddd.js, line 9: TypeError: r is undefined
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: https://asset.barrons.com/article/public/wsj_resp_article_16u.3de41f4a4ddd.js, line 9: TypeError: r is undefined
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript warning: https://www.wsj.com/puzzles/crossword/20210102/47707/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://asset.barrons.com/article/public/wsj_resp_article_16u.3de41f4a4ddd.js, line 66: TypeError: i is undefined
+JavaScript error: https://asset.barrons.com/article/public/wsj_resp_article_16u.3de41f4a4ddd.js, line 9: TypeError: r is undefined
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://asset.barrons.com/article/public/wsj_resp_article_16u.3de41f4a4ddd.js, line 9: TypeError: r is undefined
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://asset.barrons.com/article/public/wsj_buildingblocks_article.7c540f3fb373.js, line 9: TypeError: r is undefined
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: https://asset.barrons.com/article/public/wsj_resp_article_16u.3de41f4a4ddd.js, line 9: TypeError: r is undefined
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1624185881893	Marionette	INFO	Stopped listening on port 56862
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 108: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.274877906973
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1624186260288	geckodriver	INFO	Listening on 127.0.0.1:53837
+1624186269434	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Snake91\\AppData\\Local\\Temp\\rust_mozprofileeKT8D4"
+1624186270171	Marionette	INFO	Marionette enabled
+JavaScript warning: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/filter/antibanner.js, line 1158: unreachable code after return statement
+1624186271922	Marionette	INFO	Listening on port 58362
+1624186272101	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript warning: https://www.wsj.com/puzzles/crossword/20210102/47707/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://asset.barrons.com/article/public/wsj_resp_article_16u.3de41f4a4ddd.js, line 66: TypeError: i is undefined
+JavaScript error: https://asset.barrons.com/article/public/wsj_resp_article_16u.3de41f4a4ddd.js, line 9: TypeError: r is undefined
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://asset.barrons.com/article/public/wsj_resp_article_16u.3de41f4a4ddd.js, line 9: TypeError: r is undefined
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: AbortError: The operation was aborted. 
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://asset.barrons.com/article/public/wsj_resp_article_16u.3de41f4a4ddd.js, line 9: TypeError: r is undefined
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: https://asset.barrons.com/article/public/wsj_resp_article_16u.3de41f4a4ddd.js, line 9: TypeError: r is undefined
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: https://asset.barrons.com/article/public/wsj_resp_article_16u.3de41f4a4ddd.js, line 9: TypeError: r is undefined
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: https://asset.barrons.com/article/public/wsj_resp_article_16u.3de41f4a4ddd.js, line 9: TypeError: r is undefined
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1624186403523	Marionette	INFO	Stopped listening on port 58362
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 108: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.274877906970
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1625308564941	geckodriver	INFO	Listening on 127.0.0.1:59471
+1625308573814	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Snake91\\AppData\\Local\\Temp\\rust_mozprofile4hhK7N"
+1625308575048	Marionette	INFO	Marionette enabled
+JavaScript warning: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/filter/antibanner.js, line 1158: unreachable code after return statement
+1625308577001	Marionette	INFO	Listening on port 59480
+1625308577488	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+1625308614884	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript warning: https://www.wsj.com/puzzles/crossword/20210102/47707/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: uncaught exception: Error parsing data
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: moz-extension://51e10828-c26e-4d98-8359-1ef23a60e092/lib/ui-service.js, line 231: Error: Could not establish connection. Receiving end does not exist.
+1625308734761	Marionette	INFO	Stopped listening on port 59480
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 108: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.274877906970
+[Parent 11808, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

@@ -10,16 +10,16 @@ import scipy.stats as st
 import matplotlib.pyplot as plt
 
 t = 200
-iter = 10000
+iterations = 100000
 speed = 0.001
-speedType = "acc" #acc
+speedType = "const" #acc
 
-survCurves = np.zeros((iter, t))
-hazardCurves = np.zeros((iter, t))
+survCurves = np.zeros((iterations, t))
+hazardCurves = np.zeros((iterations, t))
 
 pop = 100
 
-for i in range(iter):
+for i in range(iterations):
     if speedType == "const":    
         x = np.cumsum(np.random.binomial(pop, speed, size = t))
     elif speedType == "acc":
@@ -45,15 +45,15 @@ avg = np.mean(survCurves, axis = 0)
 lb = np.percentile(survCurves, 1, axis = 0)
 ub = np.percentile(survCurves, 99, axis = 0)
 
-# plt.plot(lbn)
-# plt.plot(ubn)
-# 
-# plt.plot(avg)
-# 
-# plt.plot(lb)
-# plt.plot(ub)
-# 
-# plt.show()
+plt.plot(lbn)
+plt.plot(ubn)
+  
+plt.plot(avg)
+  
+plt.plot(lb)
+plt.plot(ub)
+  
+plt.show()
 
 
 lbn = -1.96*np.sqrt(np.var(hazardCurves, axis = 0)) + np.mean(hazardCurves, axis = 0)
@@ -65,14 +65,15 @@ lb = np.percentile(hazardCurves, 1, axis = 0)
 ub = np.percentile(hazardCurves, 99, axis = 0)
 
 
-plt.plot(lbn)
-plt.plot(ubn)
+plt.plot(lbn, label = "lower bound (normal)")
+plt.plot(ubn, label = "upper bound (normal)")
 
-plt.plot(avg)
+plt.plot(avg, label = "avg")
 
-plt.plot(lb)
-plt.plot(ub)
+plt.plot(lb, label = "lower bound (%)")
+plt.plot(ub, label = "upper bound (%)")
 
+plt.legend()
 plt.show()
 
 

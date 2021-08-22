@@ -13,6 +13,7 @@ import matplotlib.pyplot as plt
 flatten = lambda l: [item for sublist in l for item in sublist]
 
 
+
 def sim_markovchain(t, pmatrix, startvalue):
     
     """    

@@ -29,11 +29,12 @@ y1 = sim.armapqGaussian(t = 500, phi = phiList, psi = psiList)#, y0 = [0.])
 bounds = tuple([(-0.99, 0.99) for i in range(0, len(phiList) + len(psiList))] + [(0.001, None)]) 
 x0 = tuple( [0. for i in range(len(phiList) + len(psiList))] + [ 1 ] )
 
-# x = opt.minimize(fun = logL.maxARMApqN, x0 = x0, bounds = bounds, args = (y1,1,1), tol=10e-16)
+x = opt.minimize(fun = logL.maxARMApqN, x0 = x0, bounds = bounds, args = (y1,1,1), tol=10e-16)
+
 
 y1 = np.asmatrix(y1)
 
-x = opt.minimize(fun = logL.maxVARMApqN, x0 = x0, bounds = bounds, args = (y1, 1, 1), tol = 10e-16)
+x = logL.maxVARMApqN()
 
 print(x)
 

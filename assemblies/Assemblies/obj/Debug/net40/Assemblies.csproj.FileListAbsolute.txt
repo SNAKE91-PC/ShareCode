@@ -1,0 +1,10 @@
+C:\Users\Snake91\git\ShareCode\assemblies\Assemblies\bin\Debug\net40\Assemblies.dll
+C:\Users\Snake91\git\ShareCode\assemblies\Assemblies\bin\Debug\net40\Assemblies.pdb
+C:\Users\Snake91\git\ShareCode\assemblies\Assemblies\obj\Debug\net40\Assemblies.AssemblyInfoInputs.cache
+C:\Users\Snake91\git\ShareCode\assemblies\Assemblies\obj\Debug\net40\Assemblies.AssemblyInfo.cs
+C:\Users\Snake91\git\ShareCode\assemblies\Assemblies\obj\Debug\net40\Assemblies.csproj.CoreCompileInputs.cache
+C:\Users\Snake91\git\ShareCode\assemblies\Assemblies\obj\Debug\net40\Assemblies.dll
+C:\Users\Snake91\git\ShareCode\assemblies\Assemblies\obj\Debug\net40\Assemblies.pdb
+C:\Users\Snake91\git\ShareCode\assemblies\Assemblies\obj\Debug\net40\Assemblies.csprojAssemblyReference.cache
+C:\Users\Snake91\git\ShareCode\assemblies\Assemblies\obj\Debug\net40\Assemblies.Properties.Resources.resources
+C:\Users\Snake91\git\ShareCode\assemblies\Assemblies\obj\Debug\net40\Assemblies.csproj.GenerateResource.cache

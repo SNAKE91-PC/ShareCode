@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b13b5fea-318b-4d33-8ab7-09a4046502cc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../.vscode/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/.vs/ProjectSettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/.vs/assemblies/v16/.suo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/.vs/slnx.sqlite" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/Assemblies.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/Properties/Resources.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/Properties/Resources.resx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/Properties/Settings.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/Properties/Settings.settings" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/bin/Debug/net4.0/Assemblies.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/bin/Debug/net4.0/Assemblies.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/bin/Debug/net40/Assemblies.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/bin/Debug/net40/Assemblies.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/bin/Debug/net5.0/Assemblies.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/bin/Debug/net5.0/Assemblies.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/bin/Debug/net5.0/Assemblies.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/bin/Debug/net5.0/ref/Assemblies.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/bin/Release/net5.0/Assemblies.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/bin/Release/net5.0/Assemblies.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/bin/Release/net5.0/Assemblies.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/bin/Release/net5.0/ref/Assemblies.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/bs.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Assemblies.csproj.nuget.dgspec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Assemblies.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Assemblies.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Debug/net4.0/.NETFramework,Version=v4.0.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Debug/net4.0/Assemblies.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Debug/net4.0/Assemblies.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Debug/net4.0/Assemblies.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Debug/net4.0/Assemblies.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Debug/net4.0/Assemblies.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Debug/net4.0/Assemblies.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Debug/net4.0/Assemblies.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Debug/net40/.NETFramework,Version=v4.0.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Debug/net40/Assemblies.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Debug/net40/Assemblies.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Debug/net40/Assemblies.Properties.Resources.resources" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Debug/net40/Assemblies.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Debug/net40/Assemblies.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Debug/net40/Assemblies.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Debug/net40/Assemblies.csproj.GenerateResource.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Debug/net40/Assemblies.csprojAssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Debug/net40/Assemblies.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Debug/net40/Assemblies.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Debug/net40/TempPE/Properties.Resources.Designer.cs.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Debug/net5.0/86d79357-daf1-48b5-b9e0-15aafa173b72_Assemblies.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Debug/net5.0/Assemblies.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Debug/net5.0/Assemblies.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Debug/net5.0/Assemblies.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Debug/net5.0/Assemblies.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Debug/net5.0/Assemblies.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Debug/net5.0/Assemblies.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Debug/net5.0/Assemblies.csprojAssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Debug/net5.0/Assemblies.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Debug/net5.0/ref/Assemblies.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Release/net4.0/.NETFramework,Version=v4.0.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Release/net4.0/Assemblies.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Release/net4.0/Assemblies.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Release/net4.0/Assemblies.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Release/net40/.NETFramework,Version=v4.0.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Release/net40/Assemblies.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Release/net40/Assemblies.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Release/net40/Assemblies.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Release/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Release/net5.0/Assemblies.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Release/net5.0/Assemblies.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Release/net5.0/Assemblies.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Release/net5.0/Assemblies.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Release/net5.0/Assemblies.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Release/net5.0/Assemblies.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Release/net5.0/Assemblies.csprojAssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Release/net5.0/Assemblies.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Release/net5.0/Assemblies.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/Release/net5.0/ref/Assemblies.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/Assemblies/obj/project.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/assemblies.sln" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../assemblies/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../mltests/mnist/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../mltests/mnist/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../mltests/sec/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../mynodeproject/.idea/mynodeproject.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../myreactapp/.idea/myreactapp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../myreactnativeapp/.idea/myreactnativeapp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/mywebsite.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../stats/ptfmgt/clusterpp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/ShareCode.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/other.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/rAvailablePackageCache.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/rGraphicsSettings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/rMarkdownGraphicsSettings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/rSettings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.pydevproject" beforeDir="false" afterPath="$PROJECT_DIR$/../../.pydevproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.settings/org.eclipse.core.resources.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../../.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mltests/housing/RIGHTMOVE.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../mltests/rightmove/RIGHTMOVE.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mltests/housing/quotesbot-master/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/../../mltests/rightmove/quotesbot-master/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mltests/housing/quotesbot-master/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../mltests/rightmove/quotesbot-master/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mltests/housing/quotesbot-master/quotesbot/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../mltests/rightmove/quotesbot-master/quotesbot/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mltests/housing/quotesbot-master/quotesbot/body.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../mltests/rightmove/quotesbot-master/quotesbot/body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mltests/housing/quotesbot-master/quotesbot/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../mltests/rightmove/quotesbot-master/quotesbot/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mltests/housing/quotesbot-master/quotesbot/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../mltests/rightmove/quotesbot-master/quotesbot/pipelines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mltests/housing/quotesbot-master/quotesbot/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../mltests/rightmove/quotesbot-master/quotesbot/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mltests/housing/quotesbot-master/quotesbot/spiders/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../mltests/rightmove/quotesbot-master/quotesbot/spiders/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mltests/housing/quotesbot-master/quotesbot/spiders/toscrape-css.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../mltests/rightmove/quotesbot-master/quotesbot/spiders/toscrape-css.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mltests/housing/quotesbot-master/quotesbot/spiders/toscrape-xpath.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../mltests/rightmove/quotesbot-master/quotesbot/spiders/toscrape-xpath.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mltests/housing/quotesbot-master/scrapy.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/../../mltests/rightmove/quotesbot-master/scrapy.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mltests/housing/rightmove.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../mltests/rightmove/rightmove.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mltests/stocks/stock.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../mltests/stocks/stock.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stats/cpxnetw/animplot/animscatfunc.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../stats/cpxnetw/animplot/animscatfunc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stats/cpxnetw/grf.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../stats/cpxnetw/brownian2d.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stats/mle/Rplots.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stats/mle/likelihood.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../stats/mle/likelihood.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stats/mle/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../stats/mle/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stats/mle/simulate.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../stats/mle/simulate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stats/mle/tests/ARMApq.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../stats/mle/tests/ARMApq.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stats/mle/tests/_CENAR1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stats/mle/tests/_MSAR.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stats/mle/tests/_MSAR2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stats/orderstats/simulation_mh.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../stats/orderstats/simulation_mh.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stats/pricing/bsoptimMCMC.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../stats/pricing/bsoptimMCMC.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stats/ptfmgt/cluster.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stats/ptfmgt/downloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../stats/ptfmgt/downloader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stats/surv/km.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../stats/surv/km.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1nRt4iz62SfoxEDIj32vazLPmIK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b13b5fea-318b-4d33-8ab7-09a4046502cc" name="Default Changelist" comment="" />
+      <created>1611364542163</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611364542163</updated>
+      <workItem from="1611364543349" duration="424000" />
+      <workItem from="1611370301295" duration="49000" />
+      <workItem from="1611621395756" duration="35000" />
+      <workItem from="1625405363958" duration="19000" />
+      <workItem from="1625405392153" duration="21000" />
+      <workItem from="1625439120867" duration="11000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

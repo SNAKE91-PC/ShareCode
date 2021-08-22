@@ -5,14 +5,6 @@ Created on 13 Sep 2020
 '''
 
 
-
-'''
-Created on Jul 23, 2019
-
-@author: snake91
-'''
-
-
 import pymc3 as pm
 
 import scipy.stats as st
@@ -36,8 +28,11 @@ def blackscholes_num(St, K, r, sigma, T, x):
     dSt = r * St + sigma * St * x
 
     ST = St + dSt
-
-    return np.exp(-r *T) * np.max([ST - K, 0])#np.exp(-r *T) * np.array(list(map(lambda x: np.max([x - K, 0]), ST)))
+    
+    if ST > K:
+        return np.exp(-r *T) * (ST - K) 
+    else:
+        return 0 #np.exp(-r *T) * np.array(list(map(lambda x: np.max([x - K, 0]), ST)))
 
 
 def msefunc(St, K, r, sigma, T, x, Can):

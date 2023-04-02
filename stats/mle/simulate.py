@@ -61,23 +61,23 @@ def msiidN(t, transmat, startstate, paramsmean, paramsvar):
 
 
 
-# def msarmaN(t, pmatrix, startstate, paramsp = None, paramsq = None):
-#  
-#     sample_tr =  sim_markovchain(t, pmatrix = pmatrix, startvalue = startstate)
-#     sample = [0]
-#     
-#     maxord = max(list(map(lambda x: len(x), paramsp)) + list( map(lambda x: len(x), paramsp)) )
-#     for i in range(maxord, t):
-#         
-#         if paramsp is not None and paramsq is not None:
-#             value = armapqGaussian(2, phi = paramsp[sample_tr[i]], psi = paramsq[sample_tr[i]], y0 = [sample[i-maxord]])
-#         if paramsp is None and paramsq is not None:
-#             value = armapqGaussian(2, phi = None, psi = paramsq[sample_tr[i]], y0 = [sample[i-maxord]])
-#         if paramsp is not None and paramsq is None:
-#             value = armapqGaussian(2, phi = paramsp[sample_tr[i]], psi = None, y0 = [sample[i-maxord]])
-#         sample.append(value[-1])
-#      
-#     return sample
+def msarmaN(t, pmatrix, startstate, paramsp = None, paramsq = None):
+  
+    sample_tr =  sim_markovchain(t, pmatrix = pmatrix, startvalue = startstate)
+    sample = [0]
+     
+    maxord = max(list(map(lambda x: len(x), paramsp)) + list( map(lambda x: len(x), paramsp)) )
+    for i in range(maxord, t):
+         
+        if paramsp is not None and paramsq is not None:
+            value = armapqGaussian(2, phi = paramsp[sample_tr[i]], psi = paramsq[sample_tr[i]], y0 = [sample[i-maxord]])
+        if paramsp is None and paramsq is not None:
+            value = armapqGaussian(2, phi = None, psi = paramsq[sample_tr[i]], y0 = [sample[i-maxord]])
+        if paramsp is not None and paramsq is None:
+            value = armapqGaussian(2, phi = paramsp[sample_tr[i]], psi = None, y0 = [sample[i-maxord]])
+        sample.append(value[-1])
+      
+    return sample
 
 
 

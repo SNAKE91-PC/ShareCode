@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Web.UI.DataVisualization.Charting;
+using MathNet.Numerics.Distributions;
 using System.Collections.Generic;
 
 namespace Assemblies
@@ -12,9 +12,8 @@ namespace Assemblies
         public double simulatePrice(double r, double S0, double sigma, double T)
         {
 
-            double St;
-
-            St = S0 * Math.Exp(r - 0.5 * Math.Pow(sigma, 2) * T + sigma * new Chart().DataManipulator.Statistics.InverseNormalDistribution(new Random().NextDouble()) * Math.Pow(T, 2));
+            Normal normDistr = new Normal(0, 1);
+            double St = S0 * Math.Exp(r - 0.5 * Math.Pow(sigma, 2) * T + sigma * normDistr.InverseCumulativeDistribution(new Random().NextDouble()) * Math.Pow(T, 2));
 
             return St;
 

@@ -48,6 +48,7 @@ def MH(func, cntsample): #numsample
         if alpha > u:
     
             if cntsample > burnin:
+
                 accepted_trials.append(param_new)
 
                             

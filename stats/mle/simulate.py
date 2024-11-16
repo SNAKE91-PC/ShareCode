@@ -1,14 +1,13 @@
-'''
+"""
 Created on Nov 18, 2018
 
-@author: snake91
-'''
+@author: vittorioapi
+"""
 
 
 import numpy as np
 import scipy.special as sp
 from copy import deepcopy
-import matplotlib.pyplot as plt
 
 flatten = lambda l: [item for sublist in l for item in sublist]
 
@@ -474,8 +473,18 @@ def varimapdqGaussian(t, pMatrix, qMatrix, dcoeff, y0):
 
 def varmapqGaussian(t, pMatrix = None, qMatrix = None, shocks = None, y0 = None):#, y0):
 
-    # each p should have its pMatrix A
-    # A should be always squared
+    """
+        t
+            number of time steps -> int
+        pMatrix
+            each pLag should have its own pMatrix -> list[list[float]]
+        qMatrix
+            each qLag should have its own pMatrix -> list[list[float]]
+        shocks
+            pass custom random numbers
+        y0
+
+    """
     
     if pMatrix is None:
         dim = len(qMatrix[0])
@@ -504,12 +513,16 @@ def varmapqGaussian(t, pMatrix = None, qMatrix = None, shocks = None, y0 = None)
     if shocks is None:
         shocks = np.asmatrix(np.random.normal(size = (nprocesses, t)))
     else:
-        assert(shocks.shape == (nprocesses, t))
+        try:
+            shocks = np.reshape(shocks, (nprocesses, t))
+        except:
+            raise Exception(f"Shocks must be ({nprocesses}, {t})")
+        # assert(shocks.shape == (nprocesses, t))
 
-    yList = np.asmatrix(np.zeros(shape = (nprocesses, t)))
+    yList = np.asmatrix(np.zeros(shape = (nprocesses, t+1)))
     yList[:, 0: max(nporder,nqorder)] = y0#.T
     
-    for i in range(max(nporder, nqorder), t):
+    for i in range(max(nporder, nqorder), t+1):
         
         y = np.zeros(shape = (nprocesses, 1))
         
@@ -521,7 +534,7 @@ def varmapqGaussian(t, pMatrix = None, qMatrix = None, shocks = None, y0 = None)
             
             y += qMatrix[q-1] * shocks[:, i-q]
 
-        y +=  shocks[:, i]
+        y +=  shocks[:, i-max(nporder, nqorder)]
         
         yList[:, i] += y
 

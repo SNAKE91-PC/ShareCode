@@ -5,11 +5,11 @@ Created on Dec 8, 2018
 '''
 
 
-from mle import simulate as sim
+from stats.mle import simulate as sim
 import numpy as np
 import matplotlib.pyplot as plt
 import scipy.stats as st
-import prediction.confidence_interval as ci
+import stats.prediction.confidence_interval as ci
 
 window = 250
 phi = [-0.6, -0.3]
@@ -27,7 +27,7 @@ y = sim.arpGaussian(t = 500, phi = phi, y0 = list(np.random.normal(size = len(ph
 var_x = [np.percentile(x[i-window : i], q = 0.99) for i in range(window, 500)]
 var_y_iid = [np.percentile(y[i-window : i], q = 0.99) for i in range(window, 500)]
 
-var_y_ar = ci.arpGaussian(y, phi = phi, window = 250, q = 0.99, sigma = 1)[1]
+var_y_ar = ci.arpGaussian(y, phi = phi, window = 250, q = 0.99)[1]
 
 
 # plt.plot(x[window:], label = 'iid')
@@ -40,8 +40,8 @@ plt.legend()
 breach_y_iid = filter(lambda x: x==True, [ y[i] < var_y_iid[i-window] for i in range(window, 500)])
 breach_y_arp = filter(lambda x: x==True, [ y[i] < var_y_ar[i-window] for i in range(window, 500)])
 
-print 'iid', len(breach_y_iid)
-print 'arp', len(breach_y_arp)
+print('iid', len(breach_y_iid))
+print('arp', len(breach_y_arp))
 
 
 print("")

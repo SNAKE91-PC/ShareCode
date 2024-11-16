@@ -1,16 +1,14 @@
-'''
+"""
 Created on Nov 25, 2018
 
 @author: snake91
-'''
+"""
 
 import numpy as np
 import scipy.stats as st
 import scipy.special as sp
 import scipy.optimize as opt
-
-from mle import constraint as cons
-
+from stats.mle import constraint as cons
 
 flatten = lambda l: [item for sublist in l for item in sublist]
 
@@ -129,16 +127,21 @@ def maxMGARCHECCCpqN(X, alpha, beta):
 #     sigmaX0 = flatten(np.asmatrix(np.diag(np.array(np.sqrt([np.var(i) for i in X])))).tolist())
 #     corrMatrixX0 = flatten(np.identity(nprocess).tolist())
 #     x0 = tuple(x0 + sigmaX0)# + corrMatrixX0)
-      
+
+    constraints = ({'type': 'ineq',
+                    'fun': lambda params:
+                            cons.consVARp(params[nprocess :
+                                                 nprocess + nprocess**2 * aLag], aLag)},
+                   {'type': 'ineq',
+                    'fun': lambda params:
+                            cons.consVMAq(params[nprocess + nprocess**2 * aLag:
+                                                 nprocess + nprocess**2 * (aLag + bLag)], bLag)}
+                   )
     paramsX = opt.minimize(lambda params, x, a, b: varianceEstimation(params, x, a, b)['loglikelihood'], 
-                                    x0 = x0, 
-                                    args = (X, aLag, bLag),
-                                    bounds = bounds, 
-                                    constraints = ({'type': 'ineq', 
-                                                    'fun': lambda params: cons.consVARp(params[nprocess : nprocess + nprocess**2 * aLag], aLag)},
-                                                {'type': 'ineq', 
-                                                    'fun': lambda params: cons.consVMAq(params[nprocess + nprocess**2 * aLag: nprocess + nprocess**2 * (aLag + bLag)], bLag)}
-                                                )
+                                    x0=x0,
+                                    args=(X, aLag, bLag),
+                                    bounds=bounds,
+                                    constraints=constraints
                           )
         
     paramsX = paramsX.x
@@ -250,12 +253,32 @@ def maxARCHpN(params, x):
 
 
 
-def maxVARMApqN(X, p, q):
-    
-    def meanEstimation(params, x, p, q):
+def maxVARMApqN(X, p, q, start_guess_p = None, start_guess_q = None):
+    """
+        X
+            data of the process -> (obs, nprocess)
+        p
+            AR order of the process -> int
+        q
+            MA order of the process -> int
+        start_guess_p
+            starting guess (one per process) -> list[int]
+        start_guess_q
+            starting guess (one per process) -> list[int]
+    """
+
+    if start_guess_p is None:
+        start_guess_p = [0.1 for i in range(p)]
+
+    if start_guess_q is None:
+        start_guess_q = [0.1 for i in range(q)]
+
+
+    def meanEstimation(params, x, p, q, start_guess_p = 0, start_guess_q = 0):
         
-        N = lambda x, mu, sigma: np.float((1./np.sqrt(np.linalg.det(2*np.pi*sigma))) * np.exp(-0.5 * (x-mu).T * np.linalg.inv(sigma) * (x-mu)))
-        
+        N = lambda x, mu, sigma: np.float((1./np.sqrt(np.linalg.det(2*np.pi*sigma)))
+                                          * np.exp(-0.5 * (x-mu).T * np.linalg.inv(sigma) * (x-mu)))
+
         logN = lambda x, mu, sigma: -0.5 * np.log(np.linalg.det(2*np.pi*sigma)) + ( -0.5 * (x-mu).T * np.linalg.inv(sigma) * (x-mu) )
         
         nprocess, tLen = x.shape[0], x.shape[1]
@@ -324,8 +347,6 @@ def maxVARMApqN(X, p, q):
 #         print(-L)
         return -L
 
-    assert(len(X.shape) > 1)
-    
     nprocess = X.shape[0]
     pLag = p
     qLag = q
@@ -335,25 +356,36 @@ def maxVARMApqN(X, p, q):
     # x0 = tuple([0.] * nprocess**2 * pLag)
     
     x0 = []
-    for lag in range(0, (pLag + qLag)):
-        x0 += list(np.diag(np.array([0.1] * nprocess)).flatten())
-        
+    # for lag in range(0, (pLag + qLag)):
+    #     x0 += list(np.diag(np.array([0.1] * nprocess)).flatten())
+
+    for lag in range(0, pLag):
+        x0 += list(np.diag(np.array([start_guess_p[lag]] * nprocess)).flatten())
+
+    for lag in range(0, qLag):
+        x0 += list(np.diag(np.array([start_guess_q[lag]] * nprocess)).flatten())
+
+
     flatten = lambda l: [item for sublist in l for item in sublist]
     sigmaX0 = flatten(np.asmatrix(np.diag(np.array(np.sqrt([np.var(i) for i in X])))).tolist())
-    x0 = tuple(x0 + sigmaX0)
-     
+    x0 = np.array(tuple(x0 + sigmaX0))
+
+    constraints = (
+                    {'type': 'ineq',
+                    'fun': lambda params: cons.consVARp(params[: nprocess**2 * pLag], pLag)},
+                    {'type': 'ineq',
+                    'fun': lambda params: cons.consVMAq(params[nprocess**2 * pLag: nprocess**2 * (pLag + qLag)], qLag)}
+                   )
+
     paramsX = opt.minimize(meanEstimation, 
-                                x0 = x0, 
-                                args = (X, pLag, qLag),
-                                bounds = bounds,
-                                constraints = ({'type': 'ineq', 
-                                                    'fun': lambda params: cons.consVARp(params[: nprocess**2 * pLag], pLag)},
-                                                {'type': 'ineq', 
-                                                    'fun': lambda params: cons.consVMAq(params[nprocess**2 * pLag: nprocess**2 * (pLag + qLag)], qLag)}
-                                                )
-#                                 method = 'L-BFGS-B',
-                                #tol = 10e-16
+                                x0=x0,
+                                args=(X, pLag, qLag),
+                                bounds=bounds,
+                                constraints=constraints
                       )
+
+    # method = 'L-BFGS-B',
+    # tol = 10e-16
 
     phiX = []
     psiX = []
@@ -378,8 +410,14 @@ def maxVARMApqN(X, p, q):
         psiMatrix = np.asarray(psiParams[i-nprocess**2: i]).reshape((nprocess, nprocess))
         psiX.append(psiMatrix)
 
+    # shocks = np.zeros(X.shape) # calculate the mean process
+    # fitted_values = varmapq(X.shape[1], pMatrix = phiX, qMatrix = psiX, shocks = shocks, y0 = X[:,0])
 
-    return {'phi' :phiX, 'psi' : psiX, 'sigma': sigmaTrue, 'status' : paramsX.message}
+    return {'phi' :phiX,
+            'psi' : psiX,
+            'sigma': sigmaTrue,
+            'status' : paramsX.message}
+            # 'fitted_values' : fitted_values}
 
 
 def maxVARpN(params, x):

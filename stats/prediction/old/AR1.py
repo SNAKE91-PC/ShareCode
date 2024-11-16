@@ -5,7 +5,7 @@ Created on Dec 8, 2018
 '''
 
 
-from mle import simulate as sim
+from stats.mle import simulate as sim
 import numpy as np
 import matplotlib.pyplot as plt
 import scipy.stats as st
@@ -38,5 +38,5 @@ plt.legend()
 breach_y_iid = filter(lambda x: x==True, [ y[i] < var_y_iid[i-window] for i in range(window, 500)])
 breach_y_ar1 = filter(lambda x: x==True, [ y[i] < var_y_ar[i-window] for i in range(window, 500)])
 
-print 'iid', len(breach_y_iid)
-print 'ar1', len(breach_y_ar1)
+print('iid', len(breach_y_iid))
+print('ar1', len(breach_y_ar1))

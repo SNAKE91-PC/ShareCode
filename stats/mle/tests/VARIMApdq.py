@@ -4,7 +4,7 @@ Created on Dec 18, 2018
 @author: snake91
 '''
 
-import mle.simulate as sim
+import stats.mle.simulate as sim
 import numpy as np
 from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
 import matplotlib.pyplot as plt
